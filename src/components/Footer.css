@@ -1,0 +1,24 @@
+/* General styling */
+.footer {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.footer:hover {
+  background-color: #c800ff;
+  color: #ffffff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .footer {
+    padding: 12px;
+  }
+}
