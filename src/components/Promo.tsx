@@ -6,7 +6,7 @@ import color from '../images/color.jpg';
 function Promo() {
   return (
     <div>
-        <img className='promo' src={color}></img>
+        <img className='promo' src={color} alt='colors'></img>
     </div>
     );
 };

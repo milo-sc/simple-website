@@ -12,4 +12,4 @@ function Intro1() {
       );
   };
   
-  export default Intro1;
+export default Intro1;
