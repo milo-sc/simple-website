@@ -1,20 +1,22 @@
 /* General styling */
 .header {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #de7f1f;
+  color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
+  /* border-radius: 8px; */
+  padding: 8px;
+  padding-left: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  text-align: left;
 }
 
 /* Hover effect */
-.header:hover {
+/* .header:hover {
   background-color: #1454b3;
   color: #ffffff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Responsive behavior */
 @media (max-width: 600px) {
