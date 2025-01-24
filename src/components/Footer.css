@@ -2,18 +2,19 @@
 .footer {
   background-color: #ffffff;
   color: #333;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
   padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* transition: all 0.3s ease; */
+  text-align: right;
 }
 
 /* Hover effect */
 .footer:hover {
   background-color: #c800ff;
   color: #ffffff;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); */
 }
 
 /* Responsive behavior */
