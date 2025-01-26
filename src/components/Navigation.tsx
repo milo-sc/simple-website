@@ -7,7 +7,7 @@ import Promo from './Promo';
 function Navigation() {
   return (
     <div>
-      <nav>
+      <nav className='navItem'>
         <Link to="/">Homepage</Link>
         <Link to="/test">Picture</Link>
       </nav>
