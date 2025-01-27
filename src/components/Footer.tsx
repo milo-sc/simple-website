@@ -4,7 +4,8 @@ import './Footer.css';
 function Footer() {
   return (
       <div className="footer">
-          <p>Made with love by Myself</p>
+          <p>228 40th Street</p>
+          <p>Brooklyn, NY 11232</p>
       </div>
   );
 };

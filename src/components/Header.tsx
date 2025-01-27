@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-function Header(props : any) {
-  console.log(props)
+function Header() {
+  console.log()
   return (
     <div className='header'>
-      <h1>This is an h1 heading, {props.name}, {props.color} </h1>
+      <h1>Elegance Manufacturing</h1>
     </div>
   )
 }

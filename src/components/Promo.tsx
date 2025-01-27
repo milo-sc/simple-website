@@ -1,11 +1,12 @@
 import React from 'react';
+import './Promo.css';
 
-import carlotta from '../images/carlotta.jpeg';
+import color from '../images/color.jpg';
 
 function Promo() {
   return (
     <div>
-        <img src={carlotta} alt="Carlotta"></img>
+        <img className='promo' src={color} alt='colors'></img>
     </div>
     );
 };
