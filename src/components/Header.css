@@ -1,23 +1,23 @@
 /* General styling */
 .header {
-  /* background-color: #de7f1f; */
-  color: #ffffff;
-  /* border: 1px solid #ddd; */
+  color: #000000;
   font-family: Tahoma, sans-serif;
-  /* border-radius: 8px; */
   padding: 8px;
   padding-left: 15px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;  
   text-align: left;
+  /* background-color: #de7f1f; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
 }
 
 /* Hover effect */
-.header:hover {
+/* .header:hover {
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Responsive behavior */
 @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-.App {
+.app {
   background-image: url("./images/carlotta.jpeg");
   background-size: cover;
   background-position: center;
@@ -12,6 +12,16 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+.container:hover {
+  /* color: black; */
+  background-color: white;
+  transition: all 0.3s ease;  
+}
+
+.content {
+  justify-content: center;
 }
 
 /* .backgroundContainer {

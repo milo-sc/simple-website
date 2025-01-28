@@ -3,13 +3,27 @@ import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Promo from './components/Promo';
+
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
+    <div className='app'>
+      <div className='container'>
+        <Header />
 
-      <Navigation />
+        <Navigation />
+      </div>
+      
+      <div className='content'>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/test" element={<Promo />} />
+        </Routes>
+      </div>
+      
 
       <Footer /> 
 
