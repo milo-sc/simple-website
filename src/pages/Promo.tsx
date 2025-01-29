@@ -1,7 +1,8 @@
-import React from 'react';
-import './Promo.css';
+// import React from 'react';
 
+import './Promo.css';
 import color from '../images/color.jpg';
+
 
 function Promo() {
   return (

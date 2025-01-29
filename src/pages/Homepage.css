@@ -2,7 +2,7 @@
   height: 900px;
 }
 
-.scrollContainer {
+/* .scrollContainer {
   display: flex;
   overflow-x: auto;
   scrollbar-width: thin;
@@ -25,4 +25,4 @@
 
 .scrollImage:hover {
   transform: scale(1.05);
-}
+} */

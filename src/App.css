@@ -1,5 +1,5 @@
 .app {
-  background-image: url("./images/carlotta.jpeg");
+  background-image: url("./images/sanhua.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -16,14 +16,11 @@
 }
 
 .container:hover {
-  /* color: black; */
   background-color: white;
   transition: all 0.3s ease;  
 }
 
 .content {
-  /* justify-content: center; */
-  /* align-items: center; */
   text-align: center;
 }
 

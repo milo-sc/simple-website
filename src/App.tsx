@@ -1,20 +1,24 @@
-import React from 'react';
+// import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import { Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import Promo from './components/Promo';
+import Promo from './pages/Promo';
 
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className='app'>
-      <div className='container'>
-        <Header />
+      <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='container'>
+        <Header isHovered={isHovered}/>
 
-        <Navigation />
+        <Navigation isHovered={isHovered}/>
       </div>
       
       <main className='content'>
@@ -24,19 +28,7 @@ function App() {
         </Routes>
       </main>
       
-
       <Footer /> 
-
-      {/*
-      
-      <div className='container'>
-        <Intro1 />
-        <Intro2 />
-        <Intro3 />
-      </div>
-
-      <Promo />
-      */}
 
     </div>
   )

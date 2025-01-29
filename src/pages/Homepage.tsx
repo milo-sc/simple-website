@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+
 import './Homepage.css';
 // import color from '../images/color.jpg';
 // import carlotta from '../images/carlotta.jpeg';

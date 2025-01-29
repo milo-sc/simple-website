@@ -1,12 +1,15 @@
-import React from 'react';
-import './Header.css';
-// import Navigation from './Navigation';
+// import React from 'react';
+import { ChildProps } from '../types';
+import { Link } from 'react-router-dom';
 
-function Header() {
-  console.log()
+import './Header.css';
+
+function Header(props: ChildProps) {
+  const { isHovered } = props;
+
   return (
-    <div className='header'>
-      <h1>Elegance Manufacturing</h1>
+    <div>
+      <Link to="/" className='header' style={{color: isHovered ? 'black' : 'white'}} >Elegance Manufacturing</Link>
     </div>
   )
 }
