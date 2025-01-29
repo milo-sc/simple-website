@@ -8,9 +8,6 @@ function Header() {
     <div className='header'>
       <h1>Elegance Manufacturing</h1>
     </div>
-    // <div>
-    //   <Navigation />
-    // </div>
   )
 }
 

@@ -17,12 +17,12 @@ function App() {
         <Navigation />
       </div>
       
-      <div className='content'>
+      <main className='content'>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/test" element={<Promo />} />
         </Routes>
-      </div>
+      </main>
       
 
       <Footer /> 
