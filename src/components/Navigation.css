@@ -1,21 +1,13 @@
 .navBar {
-  color:black;
   display: flex;
-  font-family: Tahoma, sans-serif;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
+  list-style: none;
+  padding: 8px;
 }
 
-/* .navItem {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 16px;
-} */
-
-/* .navBar:hover {
-  background-color: white;
-  transition: all 0.3s ease;  
-} */
+.navItem {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+  padding: 8px;
+}

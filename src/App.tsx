@@ -1,44 +1,42 @@
-import React from 'react';
+// import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import { Route, Routes } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import Promo from './components/Promo';
 
+import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+
+import { LanguageSetter } from './contexts/Language';
+
+import Brand from './components/Brand';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+
+import About from './pages/About';
+import Home from './pages/Home';
+import Swatches from './pages/Swatches';
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className='app'>
-      <div className='container'>
-        <Header />
+    <LanguageSetter>
+      <div className='app'>
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='header'>
+          <Brand isHovered={isHovered}/>
 
-        <Navigation />
+          <Navigation isHovered={isHovered}/>
+        </div>
+        
+        <main className='content'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/swatches" element={<Swatches />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        
+        <Footer /> 
       </div>
-      
-      <main className='content'>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/test" element={<Promo />} />
-        </Routes>
-      </main>
-      
-
-      <Footer /> 
-
-      {/*
-      
-      <div className='container'>
-        <Intro1 />
-        <Intro2 />
-        <Intro3 />
-      </div>
-
-      <Promo />
-      */}
-
-    </div>
+    </LanguageSetter>
   )
 }
 
