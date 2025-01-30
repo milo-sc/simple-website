@@ -1,25 +1,12 @@
-/* General styling */
 .footer {
-  /* background-color: #ffffff; */
-  color: #333;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
-  padding: 16px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  /* transition: all 0.3s ease; */
-  text-align: right;
-}
-
-/* Hover effect */
-.footer:hover {
-  background-color: #c800ff;
+  background-color: #000000;
   color: #ffffff;
-  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); */
+  padding: 16px;
+  text-align: right;
+  transition: all 0.3s ease;
 }
 
-/* Responsive behavior */
-@media (max-width: 600px) {
-  .footer {
-    padding: 12px;
-  }
+.footer:hover {
+  background-color: #ffffff;
+  color: #000000;
 }

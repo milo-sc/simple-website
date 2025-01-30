@@ -11,8 +11,9 @@ function Navigation(props: ChildProps) {
     <div>
       <nav>
         <ul className='navBar'>
-          <li><Link to="/" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>Homepage</Link></li>
-          <li><Link to="/test" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>Picture</Link></li>
+          <li><Link to="/" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>Home</Link></li>
+          <li><Link to="/swatches" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>Swatches</Link></li>
+          <li><Link to="/about" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>About</Link></li>
         </ul>
       </nav>
     </div>

@@ -4,11 +4,11 @@ import { useState } from 'react';
 
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import Brand from './components/Brand';
 import Navigation from './components/Navigation';
-import Homepage from './pages/Homepage';
-import Promo from './pages/Promo';
-
+import Home from './pages/Home';
+import Swatches from './pages/Swatches';
+import About from './pages/About';
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -16,15 +16,16 @@ function App() {
   return (
     <div className='app'>
       <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='container'>
-        <Header isHovered={isHovered}/>
+        <Brand isHovered={isHovered}/>
 
         <Navigation isHovered={isHovered}/>
       </div>
       
       <main className='content'>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/test" element={<Promo />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/swatches" element={<Swatches />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       
