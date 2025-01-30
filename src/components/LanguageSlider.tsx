@@ -14,13 +14,15 @@ function LanguageSlider() {
       aria-checked={isEnglish}
       aria-label="Toggle Language"
     >
+      <div className="languageLabels">
+        <span className={isEnglish ? 'english' : ''}>EN</span>
+        <span className={!isEnglish ? 'chinese' : ''}>中文</span>
+      </div>
+
       <div className={`sliderTrack ${isEnglish ? 'english' : 'chinese'}`}>
         <div className="sliderThumb" />
       </div>
-      <div className="languageLabels">
-        <span className={isEnglish ? 'active' : ''}>EN</span>
-        <span className={!isEnglish ? 'active' : ''}>CN</span>
-      </div>
+
     </div>
   );
 }

@@ -2,6 +2,8 @@
   display: inline-block;
   cursor: pointer;
   user-select: none;
+  display: flex;
+  justify-content: right;
 }
 
 .sliderTrack {
@@ -45,8 +47,10 @@
   justify-content: space-between;
   width: 50px;
   margin-top: 5px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
+  /* padding: 8px; */
+  /* justify-content: space-between; */
 }
 
 .languageLabels span {
@@ -54,6 +58,10 @@
   transition: color 0.3s;
 }
 
-.languageLabels .active {
-  color: #333;
+.languageLabels .english {
+  color: #2196F3;
+}
+
+.languageLabels .chinese {
+  color: #f00048;
 }

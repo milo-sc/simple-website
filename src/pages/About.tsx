@@ -24,9 +24,9 @@ function About() {
 
   return (
     <div className='about'>
-      <p>
+      <h3>
         {isEnglish ? enAbout : cnAbout}
-      </p>
+      </h3>
     </div>
     );
 };

@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   list-style: none;
-  padding: 8px;
+  padding: 26px;
 }
 
 .navItem {
@@ -9,5 +9,11 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
   font-weight: bold;
-  padding: 8px;
+  padding: 24px;
+}
+
+.navItem:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  /* make the underline come in from the left and transition */
 }
