@@ -1,6 +1,6 @@
 // import React from 'react';
-
 import './Swatches.css';
+
 import color from '../images/color.jpg';
 
 function Swatches() {

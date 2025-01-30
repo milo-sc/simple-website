@@ -1,16 +1,17 @@
 .app {
   background-image: url("./images/sanhua.png");
   background-size: cover;
+  background-position: center;
 }
 
-.container {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
 
-.container:hover {
+.header:hover {
   background-color: white;
   transition: all 0.3s ease;
 }

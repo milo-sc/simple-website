@@ -1,5 +1,4 @@
 // import React from 'react';
-
 import './Footer.css';
 
 function Footer() {
@@ -9,8 +8,8 @@ function Footer() {
         <p>228 40th Street</p>
         <p>Brooklyn, NY 11232</p>
 
-        <p>Telephone: (718)923-6087</p>
-        <p>Fax: (718)923-6092</p>
+        <p>TEL: (718) 923-6087</p>
+        <p>FAX: (718) 923-6092</p>
       </div>
   );
 };

@@ -1,8 +1,8 @@
 // import React from 'react';
+import './Brand.css';
+
 import { ChildProps } from '../types';
 import { Link } from 'react-router-dom';
-
-import './Brand.css';
 
 function Brand(props: ChildProps) {
   const { isHovered } = props;

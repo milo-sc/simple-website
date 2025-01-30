@@ -1,0 +1,59 @@
+.languageToggleContainer {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sliderTrack {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.sliderTrack.english {
+  background-color: #2196F3;
+}
+
+.sliderTrack.chinese {
+  background-color: #f00048;
+}
+
+.sliderThumb {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.sliderTrack.english .sliderThumb {
+  transform: translateX(0);
+}
+
+.sliderTrack.chinese .sliderThumb {
+  transform: translateX(30px);
+}
+
+.languageLabels {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.languageLabels span {
+  color: #666;
+  transition: color 0.3s;
+}
+
+.languageLabels .active {
+  color: #333;
+}
