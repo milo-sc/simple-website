@@ -9,11 +9,21 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
   font-weight: bold;
-  padding: 24px;
+  padding-left: 8px;
+  position: relative;
 }
 
-.navItem:hover {
-  text-decoration: underline;
-  transition: all 0.3s ease;
-  /* make the underline come in from the left and transition */
+.navItem::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  bottom: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #f91621;
+  transition: width 0.3s ease-out;
+}
+
+.navItem:hover::after {
+  width: 95%;
 }

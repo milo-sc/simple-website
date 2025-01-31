@@ -1,0 +1,9 @@
+.homeBackground {
+  background-image: url("../images/425.MP4");
+  /* background-size: cover; */
+  background-position: center;
+}
+
+.defaultBackground {
+  background-color: black;
+}
