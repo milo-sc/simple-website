@@ -8,12 +8,13 @@ import { LanguageSetter } from './contexts/Language';
 
 import BackgroundRouter from './components/BackgroundRouter';
 import Brand from './components/Brand';
-import Footer from './components/Footer';
+import Address from './components/Address';
 import LanguageSlider from './components/LanguageSlider';
 import Navigation from './components/Navigation';
 import About from './pages/About';
 import Home from './pages/Home';
 import Swatches from './pages/Swatches';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -23,10 +24,12 @@ function App() {
     <LanguageSetter>
       <BackgroundRouter>
         <div>
-          <div className='language'>
+          {/* Language Toggle */}
+          <div className='language' style={{backgroundColor: isHovered ? 'rgb(60, 59, 58)' : ''}}>
             <LanguageSlider />
           </div>
 
+          {/* Header */}
           <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='header'>
             <Brand isHovered={isHovered}/>
 
@@ -35,6 +38,7 @@ function App() {
             </div>
           </div>
 
+          {/* Content */}
           <main className='content'>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -43,7 +47,12 @@ function App() {
             </Routes>
           </main>
           
-          <Footer /> 
+          {/* Footer */}
+          <div className='footer'>
+            <Address /> 
+            <Contact />
+          </div>
+          
         </div>
       </BackgroundRouter>
     </LanguageSetter>

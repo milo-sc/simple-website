@@ -14,9 +14,23 @@
 .language {
   text-align: right;
   padding: 4px;
-  background-color: rgb(60, 59, 58);
+  /* background-color: rgb(60, 59, 58); */
 }
 
 .content {
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  color: #ffffff;
+  padding: 16px;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.footer:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease;
 }
