@@ -9,7 +9,7 @@ function Brand(props: ChildProps) {
 
   return (
     <div>
-      <Link to="/" className='brand' style={{color: isHovered ? 'black' : 'white'}} >Elegance Manufacturing</Link>
+      <Link to="/" className='brand' style={{color: isHovered ? 'black' : 'white'}}>Wonderful  雅緻沙發傢俱制造廠</Link>
     </div>
   )
 }

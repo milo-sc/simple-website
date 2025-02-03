@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   list-style: none;
-  padding: 8px;
+  padding: 16px;
 }
 
 .navItem {
@@ -9,5 +9,21 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
   font-weight: bold;
-  padding: 8px;
+  padding-left: 8px;
+  position: relative;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  bottom: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #f91621;
+  transition: width 0.3s ease-out;
+}
+
+.navItem:hover::after {
+  width: 95%;
 }

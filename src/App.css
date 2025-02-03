@@ -1,21 +1,30 @@
-.app {
-  background-image: url("./images/sanhua.png");
-  background-size: cover;
-  background-position: center;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
-.header:hover {
-  background-color: white;
-  transition: all 0.3s ease;
+.language {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
 }
 
 .content {
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  color: #ffffff;
+  padding: 16px;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.footer:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease;
 }
