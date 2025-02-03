@@ -10,9 +10,9 @@ function LanguageSlider() {
     <div 
       className="languageToggleContainer"
       onClick={toggleLanguage}
-      role="switch"
-      aria-checked={isEnglish}
-      aria-label="Toggle Language"
+      // role="switch"
+      // aria-checked={isEnglish}
+      // aria-label="Toggle Language"
     >
       <div className="languageLabels">
         <span className={isEnglish ? 'english' : ''}>EN</span>

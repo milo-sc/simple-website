@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   list-style: none;
-  padding: 26px;
+  padding: 16px;
 }
 
 .navItem {

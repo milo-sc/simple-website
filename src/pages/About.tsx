@@ -5,6 +5,7 @@ import { useLanguage } from '../contexts/Language';
 
 function About() {
   const { isEnglish } = useLanguage();
+  
   const enAbout = `
   Every kind booth and table matched in all kinds of directions, including shapes, colors, materials, and designs.
   Many different choices are provided such as circular booth, single side booth, double side booth, long bench, the L-shaped, horizontal and vertical channel, headrool, OAK wood trimming, Formica trimming, the Formica frog-back type, OAK wood work or stainless steel button, anticipating to math with different skins and materials.

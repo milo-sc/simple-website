@@ -3,18 +3,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  /* background-color: rgb(166, 240, 194); */
-}
-
-.header:hover {
-  background-color: rgb(246, 246, 246);
-  transition: all 0.3s ease;
 }
 
 .language {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
   padding: 4px;
-  /* background-color: rgb(60, 59, 58); */
 }
 
 .content {

@@ -1,21 +1,27 @@
 // import React from 'react';
 import './App.css';
 
+import { LanguageSetter } from './contexts/Language';
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 
-import { LanguageSetter } from './contexts/Language';
-
 import BackgroundRouter from './components/BackgroundRouter';
-import Brand from './components/Brand';
 import Address from './components/Address';
+import Blurb from './components/Blurb';
+import Brand from './components/Brand';
+import Contact from './components/Contact';
 import LanguageSlider from './components/LanguageSlider';
 import Navigation from './components/Navigation';
 import About from './pages/About';
 import Home from './pages/Home';
 import Swatches from './pages/Swatches';
-import Contact from './components/Contact';
 
+// TODO
+// > footer
+//  - add wechat qr code
+//  - add map
+// > header
+//  - change blurb to something actually blurby and then add chinese counterpart
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,21 +31,34 @@ function App() {
       <BackgroundRouter>
         <div>
           {/* Language Toggle */}
-          <div className='language' style={{backgroundColor: isHovered ? 'rgb(60, 59, 58)' : ''}}>
+          <div 
+            className='language'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{backgroundColor: isHovered ? 'rgb(60, 59, 58)' : ''}}
+          >
+            <Blurb isHovered={isHovered}/>
             <LanguageSlider />
           </div>
 
           {/* Header */}
-          <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='header'>
+          <div 
+            className='header'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{backgroundColor: isHovered ? 'rgb(246, 246, 246)' : ''}}
+          >
             <Brand isHovered={isHovered}/>
-
+            
             <div className='container'>
               <Navigation isHovered={isHovered}/>
             </div>
           </div>
 
           {/* Content */}
-          <main className='content'>
+          <main
+            className='content'
+          >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/swatches" element={<Swatches />} />
@@ -48,7 +67,9 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div className='footer'>
+          <div 
+            className='footer'
+          >
             <Address /> 
             <Contact />
           </div>
