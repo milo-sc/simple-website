@@ -1,9 +1,10 @@
 // import React from 'react';
 import './App.css';
 
-import { LanguageSetter } from './contexts/Language';
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+
+import { LanguageSetter } from './contexts/Language';
 
 import BackgroundRouter from './components/BackgroundRouter';
 import Address from './components/Address';
@@ -12,9 +13,13 @@ import Brand from './components/Brand';
 import Contact from './components/Contact';
 import LanguageSlider from './components/LanguageSlider';
 import Navigation from './components/Navigation';
-import About from './pages/About';
+
 import Home from './pages/Home';
-import Swatches from './pages/Swatches';
+import Booths from './pages/Booths';
+import Chairs from './pages/Chairs';
+import Tables from './pages/Tables';
+import Special from './pages/Special';
+
 
 // TODO
 // > footer
@@ -63,8 +68,10 @@ function App() {
           >
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/swatches" element={<Swatches />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/booths" element={<Booths />} />
+              <Route path="/chairs" element={<Chairs />} />
+              <Route path="/tables" element={<Tables />} />
+              <Route path="/special" element={<Special />} />
             </Routes>
           </main>
           

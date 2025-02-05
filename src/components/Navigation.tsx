@@ -2,7 +2,7 @@
 import './Navigation.css';
 
 import { ChildProps } from '../types';
-import { Link } from 'react-router-dom';
+import CustomNavLink from './NavLink';
 
 import { useLanguage } from '../contexts/Language';
 
@@ -14,34 +14,21 @@ function Navigation(props: ChildProps) {
     <div>
       <nav>
         <ul className='navBar'>
-          {/* <li><Link to="/" className='navItem' style={{color: isHovered ? 'black' : 'white'}}>Home</Link></li> */}
-          <li><Link to="/" 
-                className='navItem' 
-                style={{color: isHovered ? 'black' : 'white'}}
-              >
+          <li><CustomNavLink to="/booths" isHovered = {isHovered}>
                 {isEnglish ? 'Booths' : '卡座沙发'}
-              </Link></li>
+              </CustomNavLink></li>
 
-          <li><Link to="/" 
-                className='navItem' 
-                style={{color: isHovered ? 'black' : 'white'}}
-              >
+          <li><CustomNavLink to="/chairs" isHovered = {isHovered}>
                 {isEnglish ? 'Chairs' : '椅子'}
-              </Link></li>
+              </CustomNavLink></li>
 
-          <li><Link to="/Swatches" 
-                className='navItem' 
-                style={{color: isHovered ? 'black' : 'white'}}
-              >
+          <li><CustomNavLink to="/tables" isHovered = {isHovered}>
                 {isEnglish ? 'Tables' : '桌子'}
-              </Link></li>
-
-          <li><Link to="/About" 
-                className='navItem' 
-                style={{color: isHovered ? 'black' : 'white'}}
-              >
+              </CustomNavLink></li>
+              
+          <li><CustomNavLink to="/special" isHovered = {isHovered}>
                 {isEnglish ? 'Special' : '其它'}
-              </Link></li>
+              </CustomNavLink></li>
         </ul>
       </nav>
     </div>

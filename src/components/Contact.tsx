@@ -6,7 +6,6 @@ function Contact() {
     <div>
       <p>TEL: (718) 923-6087</p>
       <p>FAX: (718) 923-6092</p>
-      {/* wechat code, email */}
     </div>
   )
 }
