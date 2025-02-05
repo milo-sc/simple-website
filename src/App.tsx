@@ -21,7 +21,9 @@ import Swatches from './pages/Swatches';
 //  - add wechat qr code
 //  - add map
 // > header
-//  - change blurb to something actually blurby and then add chinese counterpart
+//  - change blurb to something actually blurby and then add cn translation
+// > navigation
+//  - keep navitem underlined after entering tab
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
