@@ -20,15 +20,12 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-
 // TODO
 // > footer
 //  - add wechat qr code
 //  - add map
 // > header
-//  - change blurb to something actually blurby and then add cn translation
-// > navigation
-//  - keep navitem underlined after entering tab
+//  - change blurb to something actually blurby and then add cn translation -> ask
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
