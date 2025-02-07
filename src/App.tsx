@@ -20,12 +20,16 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-// TODO
 // > footer
 //  - add wechat qr code
 //  - add map
 // > header
 //  - change blurb to something actually blurby and then add cn translation -> ask
+// > background video
+//  - how do you make that hd
+// > mobile compatability
+// > change footer
+//  - make it more professional
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);

@@ -23,6 +23,11 @@ declare module '*.mp4' {
   export default src;
 }
 
+declare module '*.mov' {
+  const src: string;
+  export default src;
+}
+
 declare module '*.svg' {
   const value: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   export = value;
