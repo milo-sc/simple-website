@@ -17,14 +17,22 @@
 
 .footer {
   display: flex;
-  color: #ffffff;
+  /* background-color: black; */
+  color: #000000;
   padding: 16px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: all 0.2s ease;
 }
 
-.footer:hover {
+/* .footer:hover {
   background-color: #ffffff;
   color: #000000;
   transition: all 0.2s ease;
+} */
+
+.footerLine {
+  background-color: grey;
+  width: 80vw;
+  height: 1px;
+  margin: auto;
 }

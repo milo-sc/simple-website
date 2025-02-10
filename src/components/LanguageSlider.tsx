@@ -24,7 +24,7 @@ function LanguageSlider() {
       </div>
 
     </div>
-  );
+  )
 }
 
 export default LanguageSlider;

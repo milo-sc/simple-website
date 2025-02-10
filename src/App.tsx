@@ -22,14 +22,17 @@ import Special from './pages/Special';
 
 // > footer
 //  - add wechat qr code
-//  - add map
-// > header
-//  - change blurb to something actually blurby and then add cn translation -> ask
-// > background video
-//  - how do you make that hd
-// > mobile compatability
-// > change footer
+//  - DELAY add map
 //  - make it more professional
+// > header
+//  - DELAY change blurb
+//  - new company name
+// > background video
+//  - add arrow to the bottom to show that theres more
+// > mobile compatability
+//  - make rearrange the bottom
+// > captioned image + 4 4 letters + explanation
+// > find copyright logo and location icon, 2000 to 2025
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -64,9 +67,7 @@ function App() {
           </div>
 
           {/* Content */}
-          <main
-            className='content'
-          >
+          <main className='content'>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/booths" element={<Booths />} />
@@ -77,9 +78,9 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div 
-            className='footer'
-          >
+          <div className='footerLine'></div>
+
+          <div className='footer'>
             <Address /> 
             <Contact />
           </div>

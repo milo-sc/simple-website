@@ -1,0 +1,35 @@
+.blueSofaAndChairs {
+  width: 35vw;
+  height: 30vh;
+}
+
+.brownTableSofas {
+  width: 35vw;
+  height: 30vh;
+}
+
+.brownUTableSofas {
+  width: 25vw;
+  height: 50vh;
+}
+
+.whiteUTableSofas {
+  width: 25vw;
+  height: 50vh;
+}
+
+.greenSofa {
+  width: 25vw;
+  height: 50vh;
+}
+
+.captionedImageTitle {
+  font-weight: bold;
+  text-wrap: wrap;
+}
+
+.captionedImageDescription {
+  width: 30vw;
+  margin: auto;
+  text-wrap: wrap;
+}

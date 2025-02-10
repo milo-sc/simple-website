@@ -8,7 +8,7 @@ function Tables() {
     <div>
         <img className='tables' src={color} alt='colors'></img>
     </div>
-    );
-};
+    )
+}
 
 export default Tables;
