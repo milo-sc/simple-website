@@ -23,15 +23,13 @@ import Special from './pages/Special';
 // > footer
 //  - add wechat qr code
 //  - DELAY add map
-//  - make it more professional
 // > header
 //  - DELAY change blurb
 //  - new company name
 // > background video
 //  - add arrow to the bottom to show that theres more
 // > mobile compatability
-//  - make rearrange the bottom
-// > captioned image + 4 4 letters + explanation
+//  - rearrange the bottom
 // > find copyright logo and location icon, 2000 to 2025
 
 function App() {
