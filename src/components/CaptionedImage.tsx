@@ -7,7 +7,7 @@ function CaptionedImage(props: { source: string; alt: string; className: string;
   const { isEnglish } = useLanguage();
 
   return (
-    <div>
+    <div className='captionedImageStyle'>
       <img src={props.source} alt={props.alt} className={props.className}/>
 
       <pre className='captionedImageTitle'>

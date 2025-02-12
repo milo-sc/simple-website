@@ -23,6 +23,10 @@
   height: 50vh;
 }
 
+.captionedImageStyle {
+  margin: 5px;
+}
+
 .captionedImageTitle {
   font-weight: bold;
   text-wrap: wrap;

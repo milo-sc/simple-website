@@ -13,26 +13,27 @@
 
 .content {
   text-align: center;
+  margin: 10px;
 }
 
 .footer {
   display: flex;
-  /* background-color: black; */
   color: #000000;
-  padding: 16px;
-  justify-content: space-evenly;
-  transition: all 0.2s ease;
+  justify-content: space-between;
+  padding-inline-start: 2.5vw;
+  padding-inline-end: 2.5vw;
 }
-
-/* .footer:hover {
-  background-color: #ffffff;
-  color: #000000;
-  transition: all 0.2s ease;
-} */
 
 .footerLine {
   background-color: grey;
-  width: 80vw;
+  width: 95vw;
   height: 1px;
   margin: auto;
+}
+
+.copyright {
+  text-decoration: none;
+  margin: none;
+  color: grey;
+  font-size: x-small;
 }

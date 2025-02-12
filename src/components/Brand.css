@@ -1,17 +1,13 @@
 .brand {
   text-decoration: none;
-  /* padding: 4px; */
   padding-left: 12px;
-  font-family: cursive;
   font-size: xx-large;
   font-weight: bold;
 }
 
 .brandCN {
   text-decoration: none;
-  /* padding: 4px; */
   padding-left: 12px;
-  font-family: cursive;
   font-size: large;
   font-weight: bold;
 }

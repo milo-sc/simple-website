@@ -3,10 +3,10 @@ import './Address.css';
 
 function Address() {
   return (
-      <div>
-        <p>228 40th Street</p>
-        <p>Brooklyn, NY 11232</p>
-      </div>
+    <pre className='address'>
+      228 40th Street
+      Brooklyn, NY 11232
+    </pre>
   )
 }
 

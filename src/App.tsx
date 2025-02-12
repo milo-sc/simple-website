@@ -30,7 +30,7 @@ import Special from './pages/Special';
 //  - add arrow to the bottom to show that theres more
 // > mobile compatability
 //  - rearrange the bottom
-// > find copyright logo and location icon, 2000 to 2025
+// > can set a website font via index but <pre> in address, ocntact, captionedimage, and summary will not take website font
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -76,11 +76,19 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div className='footerLine'></div>
+          <div className='footerLine'>
+
+          </div>
 
           <div className='footer'>
             <Address /> 
-            <Contact />
+            <Contact /> 
+          </div>
+
+          <div className='footerLine'>
+            <p className='copyright'>
+              Copyright © 2000 - 2025
+            </p>
           </div>
           
         </div>
