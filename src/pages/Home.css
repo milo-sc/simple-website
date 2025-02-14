@@ -1,9 +1,37 @@
 .home {
-  /* background-color: white; */
+  text-decoration: none;
   color: rgb(255, 255, 255);
-  height: 888px;
+  font-size: x-large;
+  /* filter: brightness(500%); */
+  /* filter: drop-shadow(5px 5px); */
 }
 
-.fillerBlock {
-  height: 333px;
+.homeLink {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: large;
+}
+
+.homeLink:hover {
+  color: #000000;
+}
+
+.homeBorder {
+  border-style: solid;
+  border-color: white;
+  border-radius: 50px;
+  max-width: fit-content;
+  width: 50%;
+  margin: auto;
+}
+
+.homeBorder:hover {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.imageCaptionedContainer {
+  display: flex;
+  justify-content: space-evenly;
 }

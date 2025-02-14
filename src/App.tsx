@@ -22,14 +22,15 @@ import Special from './pages/Special';
 
 // > footer
 //  - add wechat qr code
-//  - add map
+//  - DELAY add map
 // > header
-//  - change blurb to something actually blurby and then add cn translation -> ask
+//  - DELAY change blurb
+//  - new company name
 // > background video
-//  - how do you make that hd
+//  - add arrow to the bottom to show that theres more
 // > mobile compatability
-// > change footer
-//  - make it more professional
+//  - rearrange the bottom
+// > can set a website font via index but <pre> in address, ocntact, captionedimage, and summary will not take website font
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -64,9 +65,7 @@ function App() {
           </div>
 
           {/* Content */}
-          <main
-            className='content'
-          >
+          <main className='content'>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/booths" element={<Booths />} />
@@ -77,11 +76,19 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div 
-            className='footer'
-          >
+          <div className='footerLine'>
+
+          </div>
+
+          <div className='footer'>
             <Address /> 
-            <Contact />
+            <Contact /> 
+          </div>
+
+          <div className='footerLine'>
+            <p className='copyright'>
+              Copyright © 2000 - 2025
+            </p>
           </div>
           
         </div>

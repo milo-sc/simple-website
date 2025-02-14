@@ -1,12 +1,10 @@
 // import React from 'react';
 import './Blurb.css'
 
-import { ChildProps } from '../types';
 import { useLanguage } from '../contexts/Language';
 
-function Blurb(props: ChildProps) {
+function Blurb(props: { isHovered: boolean; }) {
   const { isEnglish } = useLanguage();
-  const { isHovered } = props;
 
   const enBlurb = `
     blurb blurb blurb
@@ -19,7 +17,7 @@ function Blurb(props: ChildProps) {
     <div>
       <p 
         className='blurb'
-        style={{color: isHovered ? 'black' : 'white'}}
+        style={{color: props.isHovered ? 'black' : 'white'}}
       >
         {isEnglish ? enBlurb : cnBlurb}
       </p>

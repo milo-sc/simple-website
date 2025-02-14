@@ -1,0 +1,27 @@
+.navLink {
+  text-decoration: none;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: large;
+  font-weight: bold;
+  padding-left: 8px;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  bottom: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #f91621;
+  transition: width 0.3s ease-out;
+}
+
+.navLink.active::after {
+  width: 95%;
+}
+
+.navLink:hover::after {
+  width: 95%;
+}

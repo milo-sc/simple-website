@@ -1,4 +1,5 @@
 .special {
   color: white;
-  height: 888px;
+  height: 100vh;
+  text-wrap: wrap;
 }

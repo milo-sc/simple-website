@@ -1,0 +1,10 @@
+.summaryTitle {
+  font-weight: bold;
+  text-wrap: wrap;
+}
+
+.summary {
+  width: 80vw;
+  margin: auto;
+  text-wrap: wrap;
+}

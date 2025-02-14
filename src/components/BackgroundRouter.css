@@ -1,7 +1,10 @@
 .homeBackground {
-  background-image: url("../images/newtest.mp4");
+  background-image: url("../images/brownTableSofas.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 85vh;
 }
 
 .defaultBackground {
