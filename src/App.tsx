@@ -30,7 +30,7 @@ import Special from './pages/Special';
 //  - add arrow to the bottom to show that theres more
 // > mobile compatability
 //  - rearrange the bottom
-// > can set a website font via index but <pre> in address, ocntact, captionedimage, and summary will not take website font
+// > can set a website font via index but <pre> in address, contact, captionedimage, and summary will not take website font
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
