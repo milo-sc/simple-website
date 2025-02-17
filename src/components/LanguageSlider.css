@@ -44,13 +44,11 @@
 
 .languageLabels {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 50px;
   margin-top: 1px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  /* padding: 8px; */
-  /* justify-content: space-between; */
 }
 
 .languageLabels span {

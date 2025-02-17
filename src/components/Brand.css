@@ -11,3 +11,13 @@
   font-size: large;
   font-weight: bold;
 }
+
+@media (max-width: 850px) {
+  .brand {
+    font-size: medium;
+  }
+
+  .brandCN {
+    font-size: small;
+  }
+}

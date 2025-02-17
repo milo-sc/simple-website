@@ -33,7 +33,38 @@
 }
 
 .captionedImageDescription {
-  width: 30vw;
+  width: 35vw;
   margin: auto;
   text-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .blueSofaAndChairs {
+    width: 70vw;
+    height: 25vh;
+  }
+  
+  .brownTableSofas {
+    width: 70vw;
+    height: 25vh;
+  }
+  
+  .brownUTableSofas {
+    width: 70vw;
+    height: 50vh;
+  }
+  
+  .whiteUTableSofas {
+    width: 70vw;
+    height: 50vh;
+  }
+  
+  .greenSofa {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .captionedImageDescription {
+    width: 70vw;
+  }
 }

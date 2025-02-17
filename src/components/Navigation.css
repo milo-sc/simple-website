@@ -3,7 +3,3 @@
   list-style: none;
   padding: 16px;
 }
-
-.navItem:hover::after {
-  width: 95%;
-}

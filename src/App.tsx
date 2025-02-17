@@ -25,7 +25,6 @@ import Special from './pages/Special';
 //  - DELAY add map
 // > header
 //  - DELAY change blurb
-//  - new company name
 // > background video
 //  - add arrow to the bottom to show that theres more
 // > mobile compatability
@@ -59,7 +58,7 @@ function App() {
           >
             <Brand isHovered={isHovered}/>
             
-            <div className='container'>
+            <div>
               <Navigation isHovered={isHovered}/>
             </div>
           </div>
@@ -76,19 +75,25 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div className='footerLine'>
-
-          </div>
+          <div className='footerLine'></div>
 
           <div className='footer'>
-            <Address /> 
-            <Contact /> 
+            <Address />
+            <Contact />
           </div>
 
           <div className='footerLine'>
             <p className='copyright'>
               Copyright © 2000 - 2025
             </p>
+
+            <div>
+              <a href="https://www.flaticon.com/free-icons/location" title="location icons" className='attribution'>Location icons created by Freepik - Flaticon</a>
+                <span> </span>
+              <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Phone icons created by Gregor Cresnar - Flaticon</a>
+                <span> </span>
+              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>Fax icons created by yaicon - Flaticon</a>
+            </div>
           </div>
           
         </div>

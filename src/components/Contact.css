@@ -1,4 +1,12 @@
 .contact {
-  padding: none;
-  margin: none;
+  display: flex;
+}
+
+.contactIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.contactInfo {
+  padding: 1vh;
 }

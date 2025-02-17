@@ -20,20 +20,32 @@
   display: flex;
   color: #000000;
   justify-content: space-between;
+  margin: none;
   padding-inline-start: 2.5vw;
   padding-inline-end: 2.5vw;
 }
 
 .footerLine {
+  display: flex;
+  justify-content: space-between;
   background-color: grey;
   width: 95vw;
   height: 1px;
   margin: auto;
+  padding: none;
 }
 
 .copyright {
   text-decoration: none;
-  margin: none;
+  margin: 5px;
   color: grey;
   font-size: x-small;
+}
+
+.attribution {
+  padding: none;
+  margin: none;
+  text-decoration: none;
+  color: grey;
+  font-size: xx-small;
 }

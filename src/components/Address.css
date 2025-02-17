@@ -1,4 +1,13 @@
 .address {
-  padding: none;
-  margin: none;
+  display: flex;
+}
+
+.addressIcon {
+  padding-top: 1vh;
+  width: 20px;
+  height: 20px;
+}
+
+.addressInfo {
+  padding: 1vh;
 }

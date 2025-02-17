@@ -10,13 +10,13 @@ function CaptionedImage(props: { source: string; alt: string; className: string;
     <div className='captionedImageStyle'>
       <img src={props.source} alt={props.alt} className={props.className}/>
 
-      <pre className='captionedImageTitle'>
+      <p className='captionedImageTitle'>
         {isEnglish ? props.enTitle : props.cnTitle}
-      </pre>
+      </p>
 
-      <pre className='captionedImageDescription'>
+      <p className='captionedImageDescription'>
         {isEnglish ? props.enDescription : props.cnDescription}
-      </pre>
+      </p>
     </div>
   )
 }
