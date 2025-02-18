@@ -24,10 +24,12 @@ function Special() {
   `;
 
   return (
-    <pre className='special'>
-      {isEnglish ? enAbout : cnAbout}
-    </pre>
-  )
+    <div className='special'>
+      <span>
+        {isEnglish ? enAbout : cnAbout}
+      </span>
+    </div>
+  )
 }
 
 export default Special;

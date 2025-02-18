@@ -1,24 +1,9 @@
-.blueSofaAndChairs {
+.landscapeImage {
   width: 35vw;
   height: 30vh;
 }
 
-.brownTableSofas {
-  width: 35vw;
-  height: 30vh;
-}
-
-.brownUTableSofas {
-  width: 25vw;
-  height: 50vh;
-}
-
-.whiteUTableSofas {
-  width: 25vw;
-  height: 50vh;
-}
-
-.greenSofa {
+.portraitImage {
   width: 25vw;
   height: 50vh;
 }
@@ -39,27 +24,12 @@
 }
 
 @media (max-width: 850px) {
-  .blueSofaAndChairs {
+  .landscapeImage {
     width: 70vw;
     height: 25vh;
   }
   
-  .brownTableSofas {
-    width: 70vw;
-    height: 25vh;
-  }
-  
-  .brownUTableSofas {
-    width: 70vw;
-    height: 50vh;
-  }
-  
-  .whiteUTableSofas {
-    width: 70vw;
-    height: 50vh;
-  }
-  
-  .greenSofa {
+  .portraitImage {
     width: 70vw;
     height: 50vh;
   }

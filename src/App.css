@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  height: 10vh;
 }
 
 .language {
   display: flex;
   justify-content: space-between;
-  padding: 4px;
+  padding: 2px;
 }
 
 .content {
@@ -26,7 +26,6 @@
 }
 
 .footerLine {
-  display: flex;
   justify-content: space-between;
   background-color: grey;
   width: 95vw;

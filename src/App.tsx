@@ -21,15 +21,9 @@ import Tables from './pages/Tables';
 import Special from './pages/Special';
 
 // > footer
-//  - add wechat qr code
-//  - DELAY add map
+//  - add map
 // > header
-//  - DELAY change blurb
-// > background video
-//  - add arrow to the bottom to show that theres more
-// > mobile compatability
-//  - rearrange the bottom
-// > can set a website font via index but <pre> in address, contact, captionedimage, and summary will not take website font
+//  - change blurb
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -82,17 +76,19 @@ function App() {
             <Contact />
           </div>
 
-          <div className='footerLine'>
+          <div className='footerLine'></div>
+
+          <div  className='footer'>
             <p className='copyright'>
               Copyright © 2000 - 2025
             </p>
 
             <div>
-              <a href="https://www.flaticon.com/free-icons/location" title="location icons" className='attribution'>Location icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/location" title="location icons" className='attribution'>Icons created by Freepik, </a>
                 <span> </span>
-              <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Phone icons created by Gregor Cresnar - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Gregor Cresnar, </a>
                 <span> </span>
-              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>Fax icons created by yaicon - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>yaicon - Flaticon</a>
             </div>
           </div>
           

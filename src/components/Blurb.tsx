@@ -17,7 +17,7 @@ function Blurb(props: { isHovered: boolean; }) {
     <div>
       <p 
         className='blurb'
-        style={{color: props.isHovered ? 'black' : 'white'}}
+        // style={{color: props.isHovered ? 'black' : 'white'}}
       >
         {isEnglish ? enBlurb : cnBlurb}
       </p>

@@ -4,9 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
 }
 
 .defaultBackground {
-  background-color: black;
+  background-color: rgb(199, 222, 174);
 }

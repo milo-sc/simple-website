@@ -19,10 +19,10 @@ function Home() {
 
   return (
     <div>
-      <div style = {{height: '15vh'}}></div>
+      <div style={{height: '20vh'}}></div>
 
       {/* Middle Part */}
-      <div style = {{height: '15vh'}}> 
+      <div style={{height: '15vh'}}> 
         <div className="home">
           <p>{isEnglish ? 'New collection on display' : '全新系列展示'}</p>
         </div>
@@ -32,7 +32,11 @@ function Home() {
         </div>
       </div>
      
-      <div style = {{height: '40vh'}}></div>
+      <div style={{height: '35vh'}}></div>
+
+      <span style={{color: 'white'}} >↓</span>
+
+      <div style={{height: '15vh'}}></div>
 
       {/* Short Description */}
       <Summary />
@@ -42,7 +46,7 @@ function Home() {
         <CaptionedImage 
           source={BlueSofaAndChairs}
           alt='Unmatched Comfort, Exquisite Design'
-          className='blueSofaAndChairs'
+          className='landscapeImage'
           enTitle='Unmatched Comfort, Exquisite Design' 
           cnTitle='极致舒适，精美绝伦'
           enDescription='Ergonomically designed to provide customers with a comfortable dining experience.'
@@ -50,7 +54,7 @@ function Home() {
         <CaptionedImage 
           source={BrownTableSofas}
           alt='Meticulous Craftsmanship, Uncompromising Quality'
-          className='brownTableSofas'
+          className='landscapeImage'
           enTitle='Meticulous Craftsmanship, Uncompromising Quality' 
           cnTitle='匠心工艺，精益求精'
           enDescription='We insist on American manufacturing, using premium materials and expert craftsmanship, with every detail reflecting our commitment to quality.'
@@ -60,7 +64,7 @@ function Home() {
         <CaptionedImage 
           source={BrownUTableSofas}
           alt='Years of Experience, Trustworthy Expertise'
-          className='brownUTableSofas'
+          className='portraitImage'
           enTitle='Years of Experience, Trustworthy Expertise' 
           cnTitle='多年经验，值得信赖'
           enDescription='With decades of industry experience, we know how to create durable, comfortable, and visually appealing booths to safeguard your dining space.'
@@ -68,7 +72,7 @@ function Home() {
         <CaptionedImage 
           source={WhiteUTableSofas}
           alt='Diverse Styles, Customized Solutions'
-          className='whiteUTableSofas'
+          className='portraitImage'
           enTitle='Diverse Styles, Customized Solutions' 
           cnTitle='风格多样，量身定制'
           enDescription='We offer a wide range of styles, colors, and materials for our booths, and can provide personalized customization based on your needs, helping you create a one-of-a-kind dining space.'
@@ -77,7 +81,7 @@ function Home() {
       <CaptionedImage 
           source={GreenSofa}
           alt='Transparent Pricing, High Cost-Effectiveness'
-          className='greenSofa'
+          className='portraitImage'
           enTitle='Transparent Pricing, High Cost-Effectiveness' 
           cnTitle='价格透明，性价比高'
           enDescription='We adhere to transparent pricing and honest business practices, offering high-quality booths at affordable prices, helping you easily achieve a return on investment.'
