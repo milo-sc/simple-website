@@ -3,7 +3,7 @@ import './CaptionedImage.css'
 
 import { useLanguage } from '../contexts/Language';
 
-function CaptionedImage(props: { source: string; alt: string; className: string; enTitle: string; cnTitle: string; enDescription: string; cnDescription: string; }) {
+function CaptionedImage(props: { source: string; alt: string; className: string; enTitle: string; cnTitle: string; enDescription?: string; cnDescription?: string; }) {
   const { isEnglish } = useLanguage();
 
   return (

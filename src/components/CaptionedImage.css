@@ -8,6 +8,11 @@
   height: 50vh;
 }
 
+.squareImage {
+  width: 10vw;
+  height: 10vw;
+}
+
 .captionedImageStyle {
   margin: 5px;
 }
