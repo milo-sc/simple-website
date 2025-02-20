@@ -21,16 +21,9 @@ import Tables from './pages/Tables';
 import Special from './pages/Special';
 
 // > footer
-//  - add wechat qr code
-//  - DELAY add map
+//  - add map
 // > header
-//  - DELAY change blurb
-//  - new company name
-// > background video
-//  - add arrow to the bottom to show that theres more
-// > mobile compatability
-//  - rearrange the bottom
-// > can set a website font via index but <pre> in address, ocntact, captionedimage, and summary will not take website font
+//  - change blurb
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -59,7 +52,7 @@ function App() {
           >
             <Brand isHovered={isHovered}/>
             
-            <div className='container'>
+            <div>
               <Navigation isHovered={isHovered}/>
             </div>
           </div>
@@ -76,19 +69,27 @@ function App() {
           </main>
           
           {/* Footer */}
-          <div className='footerLine'>
-
-          </div>
+          <div className='footerLine'></div>
 
           <div className='footer'>
-            <Address /> 
-            <Contact /> 
+            <Address />
+            <Contact />
           </div>
 
-          <div className='footerLine'>
+          <div className='footerLine'></div>
+
+          <div  className='footer'>
             <p className='copyright'>
               Copyright © 2000 - 2025
             </p>
+
+            <div>
+              <a href="https://www.flaticon.com/free-icons/location" title="location icons" className='attribution'>Icons created by Freepik, </a>
+                <span> </span>
+              <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Gregor Cresnar, </a>
+                <span> </span>
+              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>yaicon - Flaticon</a>
+            </div>
           </div>
           
         </div>

@@ -35,3 +35,9 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: 850px) {
+  .imageCaptionedContainer {
+    flex-direction: column;
+  }
+}

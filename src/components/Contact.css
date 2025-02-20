@@ -1,4 +1,25 @@
 .contact {
-  padding: none;
-  margin: none;
+  display: flex;
+}
+
+.contactIcon {
+  width: 11px;
+  height: 11px;
+}
+
+.contactInfo {
+  padding: 1vh;
+}
+
+.weChatCode {
+  padding: 1vh;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+@media (max-width: 850px) {
+  .weChatCode {
+    width: 10vw;
+    height: 10vw;
+  }
 }

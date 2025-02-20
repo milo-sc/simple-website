@@ -1,14 +1,22 @@
 // import React from 'react';
 import './Address.css';
 
+import LocationIcon from '../images/location.png';
+
 function Address() {
   return (
-    <pre className='address'>
-      228 40th Street
-      Brooklyn, NY 11232
-    </pre>
-
-    // add attribution to picture, <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a>
+    <div className='address'>
+      <div className='addressIcon'>
+        <img src={LocationIcon} alt='Address Icon' className='addressIcon'/>
+      </div>
+      <div className='addressInfo'>
+        <span> 228 40th Street </span> 
+          <br></br>
+        <span> Brooklyn, NY 11232 </span>
+      </div>
+    </div>
+   
+    // add attribution to picture, 
   )
 }
 
