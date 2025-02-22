@@ -1,12 +1,12 @@
 // import React from 'react';
-import './NavLinkUnderlined';
+import './navLinkImage.css';
 
-function NavLinkUnderlined() {
+function navLinkImage() {
   return (
-    <div className='navLinkUnderlined'>
+    <div className='navLinkImage'>
 
     </div>
   )
 }
 
-export default NavLinkUnderlined;
+export default navLinkImage;
