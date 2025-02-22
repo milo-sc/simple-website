@@ -27,12 +27,12 @@ jobs:
 
       - name: Build and Push Docker Image to Artifact Registry
         run: |
-          gcloud builds submit --tag gcr.io/${{ vars.GCP_PROJECT_ID }}/example-my-portfolio-app --quiet
+          gcloud builds submit --tag gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website --quiet
 
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy example-my-portfolio-app \
-            --image=gcr.io/${{ vars.GCP_PROJECT_ID }}/example-my-portfolio-app \
+          gcloud run deploy simple-website \
+            --image=gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website \
             --platform=managed \
             --region ${{ vars.GCP_REGION }} \
             --allow-unauthenticated \
@@ -41,7 +41,7 @@ jobs:
 
       - name: Clean up old Docker images
         run: |
-          gcloud container images list-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/example-my-portfolio-app \
+          gcloud container images list-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website \
             --filter="timestamp.datetime < '$(date -d '-1 week' --utc +'%Y-%m-%dT%H:%M:%SZ')'" \
             --format='get(digest)' \
-            | xargs -I {} gcloud container images delete -q --force-delete-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/example-my-portfolio-app@{} || true
+            | xargs -I {} gcloud container images delete -q --force-delete-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website@{} || true
