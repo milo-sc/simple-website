@@ -26,7 +26,6 @@
 }
 
 .footerLine {
-  justify-content: space-between;
   background-color: grey;
   width: 95vw;
   height: 1px;
