@@ -6,7 +6,7 @@ import './Booths.css';
 function Booths() {
   return (
     <div className='booths'>
-
+      
     </div>
   )
 }

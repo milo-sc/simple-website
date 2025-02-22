@@ -1,9 +1,9 @@
 // import React from 'react';
-import './UnderlinedNavLink.css';
+import './NavLinkUnderlined.css';
 
 import { matchPath, NavLink, useLocation } from 'react-router-dom';
 
-function UnderlinedNavLink(props: { to: string; isHovered: boolean; children: React.ReactNode; }) {
+function NavLinkUnderlined(props: { to: string; isHovered: boolean; children: React.ReactNode; }) {
   const currentRoute = useLocation();
   // const isActive = currentRoute.pathname.startsWith(to as string);
   const isActive = !!matchPath(currentRoute.pathname, props.to as string);
@@ -11,7 +11,7 @@ function UnderlinedNavLink(props: { to: string; isHovered: boolean; children: Re
   return (
     <NavLink
       to = {props.to || '/'}
-      className={`navLink ${isActive ? 'active' : ''}`}
+      className={`navLinkUnderlined ${isActive ? 'active' : ''}`}
       style={{color: props.isHovered ? 'black' : 'white'}}
     >
       {props.children}
@@ -19,4 +19,4 @@ function UnderlinedNavLink(props: { to: string; isHovered: boolean; children: Re
   )
 }
 
-export default UnderlinedNavLink;
+export default NavLinkUnderlined;

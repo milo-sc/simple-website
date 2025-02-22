@@ -1,4 +1,4 @@
-.navLink {
+.navLinkUnderlined {
   text-decoration: none;
   /* font-family: 'Courier New', Courier, monospace; */
   font-size: large;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.navLink::after {
+.navLinkUnderlined::after {
   content: '';
   position: absolute;
   left: 5px;
@@ -18,16 +18,16 @@
   transition: width 0.3s ease-out;
 }
 
-.navLink.active::after {
+.navLinkUnderlined.active::after {
   width: 95%;
 }
 
-.navLink:hover::after {
+.navLinkUnderlined:hover::after {
   width: 95%;
 }
 
 @media (max-width: 850px) {
-  .navLink {
+  .navLinkUnderlined {
     font-size: medium;
   }
 }
