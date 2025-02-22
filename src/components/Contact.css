@@ -3,13 +3,12 @@
 }
 
 .contactIcon {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
 }
 
 .contactInfo {
   padding: 1vh;
-  font-size: 80%;
 }
 
 .weChatCode {

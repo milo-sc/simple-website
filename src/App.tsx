@@ -88,9 +88,7 @@ function App() {
                 <span> </span>
               <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Gregor Cresnar, </a>
                 <span> </span>
-              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>yaicon, </a>
-                <span> </span>
-              <a href="https://www.flaticon.com/free-icons/email" title="email icons" className='attribution'>Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>yaicon - Flaticon</a>
             </div>
           </div>
           
