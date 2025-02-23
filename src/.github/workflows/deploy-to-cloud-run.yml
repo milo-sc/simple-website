@@ -3,7 +3,7 @@ name: Deploy to Google Cloud Run
 on:
   push:
     tags:
-      - v*
+      - 'v*'  # Quotes around 'v*' for YAML safety
 
 env:
   SERVICE_NAME: simple-website
@@ -15,27 +15,26 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Update to v4
 
       - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v1
+        uses: google-github-actions/auth@v2  # Updated to v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: Set up Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@v1
+        uses: google-github-actions/setup-gcloud@v2  # Updated to v2
         with:
           project_id: ${{ vars.GCP_PROJECT_ID }}
-          install_components: "gcloud"
 
       - name: Build and Push Docker Image to Artifact Registry
         run: |
-          gcloud builds submit --tag gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME --quiet
+          gcloud builds submit --tag ${{ vars.GCP_REGION }}-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME/app:${{ github.ref_name }} --quiet
 
       - name: Deploy to Cloud Run
         run: |
           gcloud run deploy $SERVICE_NAME \
-            --image=gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME \
+            --image=${{ vars.GCP_REGION }}-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME/app:${{ github.ref_name }} \
             --platform=managed \
             --region ${{ vars.GCP_REGION }} \
             --allow-unauthenticated \
@@ -44,7 +43,7 @@ jobs:
 
       - name: Clean up old Docker images
         run: |
-          gcloud container images list-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME \
-            --filter="timestamp.datetime < '$(date -d '-1 week' --utc +'%Y-%m-%dT%H:%M:%SZ')'" \
+          gcloud container images list-tags ${{ vars.GCP_REGION }}-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME/app \
+            --filter="timestamp < '$(date -d '-1 week' --utc +'%Y-%m-%dT%H:%M:%SZ')'" \
             --format='get(digest)' \
-            | xargs -I {} gcloud container images delete -q --force-delete-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME@{} || true
+            | xargs -I {} gcloud container images delete -q --force-delete-tags ${{ vars.GCP_REGION }}-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME/app@{} || true
