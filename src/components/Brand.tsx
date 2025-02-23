@@ -7,7 +7,7 @@ function Brand(props: { isHovered: boolean; }) {
   return (
     <div>
       <div>
-        <Link to="/" className='brand' style={{color: props.isHovered ? 'black' : 'white'}}>Graceful</Link>
+        <Link to="/" className='brand' style={{color: props.isHovered ? 'black' : 'white'}}>Graceful Furniture Manufacturing</Link>
       </div>
       <div>
         <Link to="/" className='brandCN' style={{color: props.isHovered ? 'black' : 'white'}}>雅緻沙發傢俱制造廠</Link>
