@@ -5,6 +5,9 @@ on:
     tags:
       - v*
 
+env:
+  SERVICE_NAME: simple-website
+
 jobs:
   deploy:
     name: Build and Deploy to Cloud Run
@@ -17,7 +20,7 @@ jobs:
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v1
         with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }} 
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
@@ -27,12 +30,12 @@ jobs:
 
       - name: Build and Push Docker Image to Artifact Registry
         run: |
-          gcloud builds submit --tag gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website-service --quiet
+          gcloud builds submit --tag gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME --quiet
 
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy simple-website-service \
-            --image=gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website-service \
+          gcloud run deploy $SERVICE_NAME \
+            --image=gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME \
             --platform=managed \
             --region ${{ vars.GCP_REGION }} \
             --allow-unauthenticated \
@@ -41,7 +44,7 @@ jobs:
 
       - name: Clean up old Docker images
         run: |
-          gcloud container images list-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website-service \
+          gcloud container images list-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME \
             --filter="timestamp.datetime < '$(date -d '-1 week' --utc +'%Y-%m-%dT%H:%M:%SZ')'" \
             --format='get(digest)' \
-            | xargs -I {} gcloud container images delete -q --force-delete-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/simple-website-service@{} || true
+            | xargs -I {} gcloud container images delete -q --force-delete-tags gcr.io/${{ vars.GCP_PROJECT_ID }}/$SERVICE_NAME@{} || true
