@@ -24,6 +24,13 @@ import Special from './pages/Special';
 //  - add map
 // > header
 //  - change blurb
+// > add my own credits 
+// > hours of operation?
+// > fix blueSofaAndChairs aspect ratio
+// > fonts?
+
+// figure out www reroute
+// make the video work in chrome
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
