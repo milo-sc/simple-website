@@ -25,6 +25,7 @@ function Special() {
 
   return (
     <div className='special'>
+      <div style={{height: '10vh'}}></div>
       <span>
         {isEnglish ? enAbout : cnAbout}
       </span>

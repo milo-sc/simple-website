@@ -1,5 +1,5 @@
 .homeBackground {
-  background-image: url("../images/494.gif");
+  background-image: url("../images/background.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,5 +8,5 @@
 }
 
 .defaultBackground {
-  background-color: rgb(199, 222, 174);
+  background-color: rgb(60, 59, 58);
 }

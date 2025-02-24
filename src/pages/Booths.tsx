@@ -1,12 +1,12 @@
 // import React from 'react';
 import './Booths.css';
 
-// import TestImage from '../images/color.jpg';
+import NavLinkImageGrid from '../components/NavLinkImageGrid';
 
 function Booths() {
   return (
     <div className='booths'>
-      
+      <NavLinkImageGrid />
     </div>
   )
 }

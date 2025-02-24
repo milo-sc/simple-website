@@ -1,12 +1,12 @@
 // import React from 'react';
-import './navLinkImage.css';
+import './NavLinkImage.css';
 
-function navLinkImage() {
+function NavLinkImage(props: { source: string; alt: string; className: string; } ) {
   return (
-    <div className='navLinkImage'>
-
+    <div>
+      <img src={props.source} alt={props.alt} className={props.className} loading="lazy"/>
     </div>
   )
 }
 
-export default navLinkImage;
+export default NavLinkImage;

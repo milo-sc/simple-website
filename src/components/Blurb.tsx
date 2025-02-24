@@ -7,10 +7,10 @@ function Blurb(props: { isHovered: boolean; }) {
   const { isEnglish } = useLanguage();
 
   const enBlurb = `
-    blurb blurb blurb
+    Timeless furniture made in America
   `;
   const cnBlurb = `
-    brulb brulb brulb
+    美国永恒的家具马
   `;
 
   return (

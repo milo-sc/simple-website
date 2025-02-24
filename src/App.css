@@ -13,10 +13,10 @@
 
 .content {
   text-align: center;
-  margin: 10px;
 }
 
 .footer {
+  background-color: white;
   display: flex;
   color: #000000;
   justify-content: space-between;

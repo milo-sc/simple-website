@@ -1,6 +1,4 @@
 .booths {
-  display: flex;
-  flex-wrap: wrap;
-  flex: auto;
-  margin: auto;
+  background-color: white;
+  width: 100vw;
 }

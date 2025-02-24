@@ -1,14 +1,14 @@
-.landscapeImage {
+.landscapeCaptionedImage {
   width: 35vw;
-  height: 30vh;
+  height: 40vh;
 }
 
-.portraitImage {
+.portraitCaptionedImage {
   width: 25vw;
   height: 50vh;
 }
 
-.squareImage {
+.squareCaptionedImage {
   width: 10vw;
   height: 10vw;
 }
@@ -29,12 +29,12 @@
 }
 
 @media (max-width: 850px) {
-  .landscapeImage {
+  .landscapeCaptionedImage {
     width: 70vw;
     height: 25vh;
   }
   
-  .portraitImage {
+  .portraitCaptionedImage {
     width: 70vw;
     height: 50vh;
   }

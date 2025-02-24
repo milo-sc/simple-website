@@ -8,12 +8,6 @@ import { useLanguage } from '../contexts/Language';
 import Summary from '../components/Summary';
 import CaptionedImage from '../components/CaptionedImage';
 
-import BlueSofaAndChairs from '../images/blueSofaAndChairs.jpg';
-import BrownTableSofas from '../images/brownTableSofas.jpeg';
-import BrownUTableSofas from '../images/brownUTableSofas.jpg';
-import WhiteUTableSofas from '../images/whiteUTableSofas.jpg';
-import GreenSofa from '../images/greenSofa.jpg';
-
 function Home() {
   const { isEnglish } = useLanguage();
 
@@ -44,18 +38,18 @@ function Home() {
       {/* Captioned Images */}
       <div className='imageCaptionedContainer'>
         <CaptionedImage 
-          source={BlueSofaAndChairs}
+          source='home_images/blueSofaAndChairs.jpg'
           alt='Unmatched Comfort, Exquisite Design'
-          className='landscapeImage'
+          className='landscapeCaptionedImage'
           enTitle='Unmatched Comfort, Exquisite Design' 
           cnTitle='极致舒适，精美绝伦'
           enDescription='Ergonomically designed to provide customers with a comfortable dining experience.'
           cnDescription='符合人体工学的设计，为顾客提供舒适的用餐体验。'
           />
         <CaptionedImage 
-          source={BrownTableSofas}
+          source='home_images/brownTableSofas.jpeg'
           alt='Meticulous Craftsmanship, Uncompromising Quality'
-          className='landscapeImage'
+          className='landscapeCaptionedImage'
           enTitle='Meticulous Craftsmanship, Uncompromising Quality' 
           cnTitle='匠心工艺，精益求精'
           enDescription='We insist on American manufacturing, using premium materials and expert craftsmanship, with every detail reflecting our commitment to quality.'
@@ -64,18 +58,18 @@ function Home() {
       </div>
       <div className='imageCaptionedContainer'>
         <CaptionedImage 
-          source={BrownUTableSofas}
+          source='home_images/brownUTableSofas.jpg'
           alt='Years of Experience, Trustworthy Expertise'
-          className='portraitImage'
+          className='portraitCaptionedImage'
           enTitle='Years of Experience, Trustworthy Expertise' 
           cnTitle='多年经验，值得信赖'
           enDescription='With decades of industry experience, we know how to create durable, comfortable, and visually appealing booths to safeguard your dining space.'
           cnDescription='凭借多年行业经验，我们深知如何打造经久耐用、舒适美观的展位，为您的餐饮空间保驾护航。'
           />
         <CaptionedImage 
-          source={WhiteUTableSofas}
+          source='home_images/whiteUTableSofas.jpg'
           alt='Diverse Styles, Customized Solutions'
-          className='portraitImage'
+          className='portraitCaptionedImage'
           enTitle='Diverse Styles, Customized Solutions' 
           cnTitle='风格多样，量身定制'
           enDescription='We offer a wide range of styles, colors, and materials for our booths, and can provide personalized customization based on your needs, helping you create a one-of-a-kind dining space.'
@@ -83,9 +77,9 @@ function Home() {
           />
       </div>
       <CaptionedImage 
-        source={GreenSofa}
+        source='home_images/greenSofa.jpg'
         alt='Transparent Pricing, High Cost-Effectiveness'
-        className='portraitImage'
+        className='portraitCaptionedImage'
         enTitle='Transparent Pricing, High Cost-Effectiveness' 
         cnTitle='价格透明，性价比高'
         enDescription='We adhere to transparent pricing and honest business practices, offering high-quality booths at affordable prices, helping you easily achieve a return on investment.'
