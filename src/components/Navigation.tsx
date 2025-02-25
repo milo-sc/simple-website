@@ -9,7 +9,7 @@ function Navigation(props: { isHovered: boolean; }) {
   const { isEnglish } = useLanguage();
 
   return (
-    <div>
+    // <div>
       <nav>
         <ul className='navBar'>
           <li><NavLinkUnderlined to="/booths" isHovered = {props.isHovered}>
@@ -29,8 +29,7 @@ function Navigation(props: { isHovered: boolean; }) {
               </NavLinkUnderlined></li>
         </ul>
       </nav>
-    </div>
-
+    // </div>
   )
 }
 

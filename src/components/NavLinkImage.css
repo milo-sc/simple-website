@@ -1,4 +1,14 @@
 .squareNavLinkImage {
   width: 15vw;
   height: 15vw;
+  padding: 5px;
+}
+
+/* For Mobile */
+@media (max-width: 850px) {
+  .squareNavLinkImage {
+    width: 30vw;
+    height: 30vw;
+    padding: 5px;
+  }
 }

@@ -28,7 +28,7 @@ function Home() {
      
       <div style={{height: '35vh'}}></div>
 
-      <span style={{color: 'white'}} >↓</span>
+      <span style={{color: 'white', fontSize: '25px'}} >↓</span>
 
       <div style={{height: '15vh'}}></div>
 
@@ -63,7 +63,7 @@ function Home() {
           className='portraitCaptionedImage'
           enTitle='Years of Experience, Trustworthy Expertise' 
           cnTitle='多年经验，值得信赖'
-          enDescription='With decades of industry experience, we know how to create durable, comfortable, and visually appealing booths to safeguard your dining space.'
+          enDescription='With decades of industry experience, we know how to create durable, comfortable, and visually appealing booths for your dining space.'
           cnDescription='凭借多年行业经验，我们深知如何打造经久耐用、舒适美观的展位，为您的餐饮空间保驾护航。'
           />
         <CaptionedImage 

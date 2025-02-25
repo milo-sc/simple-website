@@ -1,26 +1,23 @@
 .contact {
+  padding-left: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+.contactLine {
+  padding: 1px;
   display: flex;
 }
 
+.addressIcon {
+  padding-top: .5vh;
+  width: 20px;
+  height: 20px;
+}
+
 .contactIcon {
-  width: 10px;
-  height: 10px;
-}
-
-.contactInfo {
-  padding: 1vh;
-  font-size: 80%;
-}
-
-.weChatCode {
-  padding: 1vh;
-  width: 4vh;
-  height: 4vh;
-}
-
-@media (max-width: 850px) {
-  .weChatCode {
-    width: 10vw;
-    height: 10vw;
-  }
+  width: 20px;
+  height: 20px;
 }

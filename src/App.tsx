@@ -6,11 +6,10 @@ import { useState } from 'react';
 
 import { LanguageSetter } from './contexts/Language';
 
-import BackgroundRouter from './components/BackgroundRouter';
-import Address from './components/Address';
+import Contact from './components/Contact';
 import Blurb from './components/Blurb';
 import Brand from './components/Brand';
-import Contact from './components/Contact';
+import WeChat from './components/WeChat';
 import LanguageSlider from './components/LanguageSlider';
 import Navigation from './components/Navigation';
 
@@ -20,28 +19,36 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-// > footer
-//  - add map
-// > header
-//  - change blurb
-// > add my own credits 
-// > hours of operation?
-// > fonts?
+// footer
+//  add map
+//  google maps integration -> hyperlink? or google maps integration
 
-// figure out www reroute
+// home
+//  change arrow to be less bold
+
+// booths
+//  mouse hover -> picture gets bigger
+
+// remove background router -> change header to use location
+// stop video when in another tab?
+
+// hours of operation? mon to sat 9am to 5:30pm - add to the right of address 
+// make address a hyperlink
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <LanguageSetter>
-      <BackgroundRouter>
-        <div>
+      <div className="videoContainer">
+        <video autoPlay muted loop playsInline className='backgroundVideo'>
+          <source src="/background.mp4" type="video/mp4"></source>
+        </video>
+        <div className='overlay'>
           {/* Language Toggle */}
           <div 
             className='language'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
             style={{backgroundColor: isHovered ? 'rgb(60, 59, 58)' : ''}}
           >
             <Blurb isHovered={isHovered}/>
@@ -51,15 +58,11 @@ function App() {
           {/* Header */}
           <div 
             className='header'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
             style={{backgroundColor: isHovered ? 'rgb(246, 246, 246)' : ''}}
           >
             <Brand isHovered={isHovered}/>
-            
-            <div>
-              <Navigation isHovered={isHovered}/>
-            </div>
+            <Navigation isHovered={isHovered}/>
           </div>
 
           {/* Content */}
@@ -77,8 +80,8 @@ function App() {
           <div className='footerLine'></div>
 
           <div className='footer'>
-            <Address />
             <Contact />
+            <WeChat />
           </div>
 
           <div className='footerLine'></div>
@@ -88,19 +91,12 @@ function App() {
               Copyright © 2000 - 2025
             </p>
 
-            <div>
-              <a href="https://www.flaticon.com/free-icons/location" title="location icons" className='attribution'>Icons created by Freepik, </a>
-                <span> </span>
-              <a href="https://www.flaticon.com/free-icons/phone" title="phone icons" className='attribution'>Gregor Cresnar, </a>
-                <span> </span>
-              <a href="https://www.flaticon.com/free-icons/fax" title="fax icons" className='attribution'>yaicon, </a>
-                <span> </span>
-              <a href="https://www.flaticon.com/free-icons/email" title="email icons" className='attribution'>Freepik - Flaticon</a>
-            </div>
+            {/* <div>
+              credit myself
+            </div> */}
           </div>
-          
         </div>
-      </BackgroundRouter>
+      </div>
     </LanguageSetter>
   )
 }

@@ -1,6 +1,11 @@
 .navLinkImageGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20vw, 20vw));
-  /* gap: 10px;
-  padding: 1px; */
+}
+
+/* For Mobile */
+@media (max-width: 850px) {
+  .navLinkImageGrid {
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 30vw));
+  }
 }

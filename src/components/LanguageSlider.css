@@ -56,10 +56,10 @@
   transition: color 0.3s;
 }
 
-.languageLabels .english {
+.languageLabels.english {
   color: #2196F3;
 }
 
-.languageLabels .chinese {
+.languageLabels.chinese {
   color: #f00048;
 }

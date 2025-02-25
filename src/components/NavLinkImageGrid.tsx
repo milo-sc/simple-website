@@ -4,7 +4,7 @@ import './NavLinkImageGrid.css';
 import NavLinkImage from "./NavLinkImage";
 
 const NavLinkImageGrid = () => {
-  const imageNumbers = Array.from({ length: 64 }, (_, i) => i + 1);
+  const imageNumbers = Array.from({ length: 63 }, (_, i) => i + 1);
 
   return (
     <div className="navLinkImageGrid">

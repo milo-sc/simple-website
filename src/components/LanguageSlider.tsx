@@ -13,7 +13,6 @@ function LanguageSlider() {
     >
       <div className="languageLabels">
         <span className={isEnglish ? 'english' : ''}>EN</span>
-        {/* <span className={!isEnglish ? 'chinese' : ''}>CN</span> */}
         <span className={!isEnglish ? 'chinese' : ''}>中文</span>
       </div>
 

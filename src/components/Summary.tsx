@@ -10,10 +10,10 @@ function Summary() {
     American Craftsmanship, Legacy of Quality – Creating Your Ideal Dining Space
   `
   const enSummary = `
-    With decades of experience in the industry, we deeply understand the art of dining space design. 
-    Our high-quality booths, proudly made in the USA, are tailor-made for restaurants, bars, and bistros, helping you effortlessly create a comfortable atmosphere and elevate your customers' dining experience.
-    Whether you prefer modern minimalism or vintage elegance, our wide variety of booth styles can meet your personalized needs. 
-    From cozy and romantic two-seater booths to spacious and comfortable multi-person lounges, we can provide seating solutions that perfectly align with your vision, without compromise, just perfection.
+    With decades of experience in the industry, we deeply understand the art of dining space design.
+    Proudly produced in the USA, our high-quality booths are tailor-made for restaurants, bars, and bistros, helping you effortlessly create a comfortable atmosphere and elevate your customers' dining experience.
+    Whether you prefer modern minimalism or vintage elegance, our wide variety of booth styles fit your personalized needs. 
+    From cozy and romantic two-seater booths to spacious and comfortable multi-person lounges, we provide seating solutions that perfectly align with your vision, without compromise, just perfection.
   `;
 
   const cnSummaryTitle =`

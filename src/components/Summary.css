@@ -9,3 +9,11 @@
   text-wrap: wrap;
   padding: 5px;
 }
+
+/* For Mobile */
+@media (max-width: 850px) {
+  .summaryTitle {
+    width: 80vw;
+    margin: auto;
+  }
+}

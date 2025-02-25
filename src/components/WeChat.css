@@ -1,0 +1,25 @@
+.weChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vh;
+  padding-right: 3vw;
+}
+
+.weChatName {
+  font-size: 120%;
+}
+
+.weChatCode {
+  width: 8vh;
+  height: 8vh;
+}
+
+/* For Mobile */
+@media (max-width: 850px) {
+  .weChatCode {
+    width: 15vw;
+    height: 15vw;
+  }
+}

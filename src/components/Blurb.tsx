@@ -7,20 +7,15 @@ function Blurb(props: { isHovered: boolean; }) {
   const { isEnglish } = useLanguage();
 
   const enBlurb = `
-    Timeless furniture made in America
+    Phone - (718) 923-6087
   `;
   const cnBlurb = `
-    美国永恒的家具马
+    电话 - (718)923-6087
   `;
 
   return (
     <div>
-      <p 
-        className='blurb'
-        // style={{color: props.isHovered ? 'black' : 'white'}}
-      >
-        {isEnglish ? enBlurb : cnBlurb}
-      </p>
+      <span className='blurb'> {isEnglish ? enBlurb : cnBlurb} </span>
     </div>
   )
 }
