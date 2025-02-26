@@ -28,22 +28,13 @@ function Summary() {
 
     选择我们，是你明智的决定。
   `;
-  
-  // const enSummaryHomeEnd = `
-  //   Contact us today to learn more and schedule a visit to explore our booth collection! 
-  //   Let us use our professional expertise and exceptional service to create a memorable dining space for you, attract more customers, and enhance your brand value!
-  // `
-  // const cnSummaryHomeEnd = `
-  //   立即联系我们，了解更多信息，并预约参观我们的展位系列！ 
-  //   让我们用专业的经验和优质的服务，为您打造令人难忘的餐饮空间，吸引更多顾客，提升您的品牌价值！
-  // `
 
   return (
-    <div>
-      <p className='summaryTitle'>
+    <div className='summary'>
+      <p className='title'>
         {isEnglish ? enSummaryTitle : cnSummaryTitle}
       </p>
-      <p className='summary'>
+      <p>
         {isEnglish ? enSummary : cnSummary}
       </p>
     </div>

@@ -12,23 +12,26 @@ function Home() {
   const { isEnglish } = useLanguage();
 
   return (
+    // <div className='home'>
     <div>
       <div style={{height: '20vh'}}></div>
 
       {/* Middle Part */}
       <div style={{height: '15vh'}}> 
-        <div className="home">
+        <div className="welcome">
           <p>{isEnglish ? 'New collection on display' : '全新系列展示'}</p>
         </div>
 
-        <div className='homeBorder'>
-          <Link to="/Booths" className='homeLink'>{isEnglish ? 'Explore' : '探索'}</Link>
+        <div className='toBooths'>
+          <Link to="/Booths" className='button'>{isEnglish ? 'Explore' : '探索'}</Link>
         </div>
       </div>
      
       <div style={{height: '35vh'}}></div>
 
-      <span style={{color: 'white', fontSize: '25px'}} >↓</span>
+      {/* Arrow */}
+      {/* <span style={{color: 'white', fontSize: '25px'}} >↓</span> */}
+      <img src='/home_images/downArrow.png' alt="Down Arrow" className="downArrow" loading="lazy"/>
 
       <div style={{height: '15vh'}}></div>
 
@@ -36,11 +39,11 @@ function Home() {
       <Summary />
 
       {/* Captioned Images */}
-      <div className='imageCaptionedContainer'>
+      <div className='captionedImageContainer'>
         <CaptionedImage 
           source='home_images/blueSofaAndChairs.jpg'
           alt='Unmatched Comfort, Exquisite Design'
-          className='landscapeCaptionedImage'
+          className='landscape'
           enTitle='Unmatched Comfort, Exquisite Design' 
           cnTitle='极致舒适，精美绝伦'
           enDescription='Ergonomically designed to provide customers with a comfortable dining experience.'
@@ -49,18 +52,18 @@ function Home() {
         <CaptionedImage 
           source='home_images/brownTableSofas.jpeg'
           alt='Meticulous Craftsmanship, Uncompromising Quality'
-          className='landscapeCaptionedImage'
+          className='landscape'
           enTitle='Meticulous Craftsmanship, Uncompromising Quality' 
           cnTitle='匠心工艺，精益求精'
           enDescription='We insist on American manufacturing, using premium materials and expert craftsmanship, with every detail reflecting our commitment to quality.'
           cnDescription='我们坚持美国制造，精选优质材料，精湛工艺打造，每一个细节都彰显着我们对品质的执着追求。'
           />
       </div>
-      <div className='imageCaptionedContainer'>
+      <div className='captionedImageContainer'>
         <CaptionedImage 
           source='home_images/brownUTableSofas.jpg'
           alt='Years of Experience, Trustworthy Expertise'
-          className='portraitCaptionedImage'
+          className='portrait'
           enTitle='Years of Experience, Trustworthy Expertise' 
           cnTitle='多年经验，值得信赖'
           enDescription='With decades of industry experience, we know how to create durable, comfortable, and visually appealing booths for your dining space.'
@@ -69,7 +72,7 @@ function Home() {
         <CaptionedImage 
           source='home_images/whiteUTableSofas.jpg'
           alt='Diverse Styles, Customized Solutions'
-          className='portraitCaptionedImage'
+          className='portrait'
           enTitle='Diverse Styles, Customized Solutions' 
           cnTitle='风格多样，量身定制'
           enDescription='We offer a wide range of styles, colors, and materials for our booths, and can provide personalized customization based on your needs, helping you create a one-of-a-kind dining space.'
@@ -79,7 +82,7 @@ function Home() {
       <CaptionedImage 
         source='home_images/greenSofa.jpg'
         alt='Transparent Pricing, High Cost-Effectiveness'
-        className='portraitCaptionedImage'
+        className='portrait'
         enTitle='Transparent Pricing, High Cost-Effectiveness' 
         cnTitle='价格透明，性价比高'
         enDescription='We adhere to transparent pricing and honest business practices, offering high-quality booths at affordable prices, helping you easily achieve a return on investment.'

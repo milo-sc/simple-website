@@ -1,5 +1,8 @@
-.navBar {
+.navigation {
   display: flex;
   list-style: none;
-  /* padding: 1vw; */
+}
+
+.navigation .item {
+  padding: 3px;
 }

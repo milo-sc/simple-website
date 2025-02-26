@@ -1,7 +1,20 @@
 .special {
   color: white;
-  width: 50vw;
-  height: 100vh;
-  text-wrap: wrap;
+  width: 70vw;
   margin: auto;
+}
+
+.special .endDivider {
+  height: 66vh;
+}
+
+/* For Mobile */
+@media (max-width: 850px) {
+  .special {
+    width: 95vw;
+  }
+
+  .special .endDivider {
+    height: 27vh;
+  }
 }

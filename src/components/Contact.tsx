@@ -9,32 +9,32 @@ function Contact() {
   return (
     <div className='contact'>
       {/* Address */}
-      <div className='contactLine'>
-        <img src='/footer_images/location.gif' alt='Address Icon' className='addressIcon'/>
-        <div>
-          <span> 228 40th Street </span> 
+      <div className='address'>
+        <img src='/footer_images/location.gif' alt='Address Icon' className='icon'/>
+        <div className='info'>
+          <a href='https://maps.app.goo.gl/aAzuem478RvNx9YHA'> 228 40th Street </a> 
             <br></br>
-          <span> Brooklyn, NY 11232 </span>
+          <a href='https://maps.app.goo.gl/aAzuem478RvNx9YHA'> Brooklyn, NY 11232 </a>
         </div>
       </div>
 
       {/* Email */}
-      <div className='contactLine'>
+      <div className='container'>
         {/* <span> {isEnglish ? 'Please contact us at:' : '请联系我们'} </span> */}
           {/* <br></br> */}
-        <img src='/footer_images/email.gif' alt='Email Icon' className='contactIcon'/>
+        <img src='/footer_images/email.gif' alt='Email Icon' className='icon'/>
         <span> gracefulsofa@gmail.com </span>
       </div>
       
       {/* Phone */}
-      <div className='contactLine'>
-        <img src='/footer_images/phone.gif' alt='Phone Icon' className='contactIcon'/>
+      <div className='container'>
+        <img src='/footer_images/phone.gif' alt='Phone Icon' className='icon'/>
         <span> (718) 923-6087 </span>
       </div>
       
       {/* Fax */}
-      <div className='contactLine'>
-        <img src='/footer_images/phone.gif' alt='Fax Icon' className='contactIcon'/> {/* but actually fax */}
+      <div className='container'>
+        <img src='/footer_images/fax.png' alt='Fax Icon' className='icon'/>
         <span> (718) 923-6092 </span>
       </div>
 

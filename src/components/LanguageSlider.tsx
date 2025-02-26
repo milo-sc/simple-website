@@ -7,17 +7,14 @@ function LanguageSlider() {
   const { isEnglish, toggleLanguage } = useLanguage();
 
   return (
-    <div 
-      className="languageToggleContainer"
-      onClick={toggleLanguage}
-    >
-      <div className="languageLabels">
+    <div className="languageSlider" onClick={toggleLanguage}>
+      <div className="labels">
         <span className={isEnglish ? 'english' : ''}>EN</span>
         <span className={!isEnglish ? 'chinese' : ''}>中文</span>
       </div>
 
-      <div className={`sliderTrack ${isEnglish ? 'english' : 'chinese'}`}>
-        <div className="sliderThumb" />
+      <div className={`slider ${isEnglish ? 'english' : 'chinese'}`}>
+        <div className="thumb" />
       </div>
 
     </div>

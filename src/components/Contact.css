@@ -6,18 +6,28 @@
   flex-direction: column;
 }
 
-.contactLine {
+.contact .container {
   padding: 1px;
   display: flex;
 }
 
-.addressIcon {
+.contact .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Address, needs different CSS because its a 2 liner */
+.address {
+  padding: 1px;
+  display: flex;
+}
+
+.address .icon {
   padding-top: .5vh;
   width: 20px;
   height: 20px;
 }
 
-.contactIcon {
-  width: 20px;
-  height: 20px;
+.address .info {
+  text-decoration: none;
 }

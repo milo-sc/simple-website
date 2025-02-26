@@ -1,7 +1,7 @@
 // import React from 'react';
 import './App.css';
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
 import { LanguageSetter } from './contexts/Language';
@@ -19,35 +19,41 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-// footer
-//  add map
-//  google maps integration -> hyperlink? or google maps integration
+// brand
+//  SHELVED change brand's text colors when hovering over the brand?
 
-// home
-//  change arrow to be less bold
+// footer
+//  add google maps integration?
+//  hours of operation? mon to sat 9am to 5:30pm - add to the right of address 
 
 // booths
 //  mouse hover -> picture gets bigger
 
-// remove background router -> change header to use location
-// stop video when in another tab?
+// SHELVED stop video when in another route? 
 
-// hours of operation? mon to sat 9am to 5:30pm - add to the right of address 
-// make address a hyperlink
+// https://uxwing.com/thin-long-arrow-bottom-icon/ for icons
 
 function App() {
+  const currentLocation = useLocation();
   const [isHovered, setIsHovered] = useState(false);
+
+  const isHome = () => {
+    switch (currentLocation.pathname) {
+      case '/booths': return false;
+      default: return true;
+    }
+  }
 
   return (
     <LanguageSetter>
-      <div className="videoContainer">
-        <video autoPlay muted loop playsInline className='backgroundVideo'>
+      <div className="app">
+        <video autoPlay muted loop playsInline x5-video-player-type="h5" className='backgroundVideo'>
           <source src="/background.mp4" type="video/mp4"></source>
         </video>
-        <div className='overlay'>
+        <div className='mainLayer'>
           {/* Language Toggle */}
           <div 
-            className='language'
+            className={`language ${isHome() ? '' : 'notHome'}`}
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
             style={{backgroundColor: isHovered ? 'rgb(60, 59, 58)' : ''}}
           >
@@ -57,7 +63,7 @@ function App() {
 
           {/* Header */}
           <div 
-            className='header'
+            className={`header ${isHome() ? '' : 'notHome'}`}
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
             style={{backgroundColor: isHovered ? 'rgb(246, 246, 246)' : ''}}
           >

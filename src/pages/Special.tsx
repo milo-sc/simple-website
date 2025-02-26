@@ -29,6 +29,7 @@ function Special() {
       <span>
         {isEnglish ? enAbout : cnAbout}
       </span>
+      <div className='endDivider'></div>
     </div>
   )
 }

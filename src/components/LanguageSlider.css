@@ -1,4 +1,4 @@
-.languageToggleContainer {
+.languageSlider {
   display: inline-block;
   cursor: pointer;
   user-select: none;
@@ -6,7 +6,29 @@
   justify-content: right;
 }
 
-.sliderTrack {
+.languageSlider span {
+  color: #666;
+  transition: color 0.3s;
+}
+
+.languageSlider .labels {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50px;
+  margin-top: 1px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.labels .english {
+  color: #2196F3;
+}
+
+.labels .chinese {
+  color: #f00048;
+}
+
+.slider {
   position: relative;
   width: 50px;
   height: 20px;
@@ -15,15 +37,15 @@
   transition: background-color 0.3s;
 }
 
-.sliderTrack.english {
+.slider.english {
   background-color: #2196F3;
 }
 
-.sliderTrack.chinese {
+.slider.chinese {
   background-color: #f00048;
 }
 
-.sliderThumb {
+.slider .thumb {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -34,32 +56,10 @@
   transition: transform 0.3s ease;
 }
 
-.sliderTrack.english .sliderThumb {
+.slider.english .thumb {
   transform: translateX(0);
 }
 
-.sliderTrack.chinese .sliderThumb {
+.slider.chinese .thumb {
   transform: translateX(30px);
-}
-
-.languageLabels {
-  display: flex;
-  justify-content: space-evenly;
-  width: 50px;
-  margin-top: 1px;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.languageLabels span {
-  color: #666;
-  transition: color 0.3s;
-}
-
-.languageLabels.english {
-  color: #2196F3;
-}
-
-.languageLabels.chinese {
-  color: #f00048;
 }

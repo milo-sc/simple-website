@@ -1,23 +1,14 @@
-.home {
+/* .home {
+
+} */
+
+.welcome {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: x-large;
-  /* filter: brightness(500%); */
-  /* filter: drop-shadow(5px 5px); */
 }
 
-.homeLink {
-  text-decoration: none;
-  color: white;
-  margin: 8px;
-  font-size: large;
-}
-
-.homeLink:hover {
-  color: #000000;
-}
-
-.homeBorder {
+.toBooths {
   border-style: solid;
   border-color: white;
   border-radius: 50px;
@@ -26,18 +17,40 @@
   margin: auto;
 }
 
-.homeBorder:hover {
+.toBooths:hover {
   background-color: white;
   transition: all 0.3s ease;
 }
 
-.imageCaptionedContainer {
+.toBooths .button {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: large;
+}
+
+.toBooths .button:hover {
+  color: #000000;
+}
+
+.downArrow {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.captionedImageContainer {
   display: flex;
   justify-content: space-evenly;
 }
 
+/* For Mobile */
 @media (max-width: 850px) {
-  .imageCaptionedContainer {
+  .downArrow {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .captionedImageContainer {
     flex-direction: column;
   }
 }

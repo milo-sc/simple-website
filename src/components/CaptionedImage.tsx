@@ -7,14 +7,14 @@ function CaptionedImage(props: { source: string; alt: string; className: string;
   const { isEnglish } = useLanguage();
 
   return (
-    <div className='captionedImageStyle'>
-      <img src={props.source} alt={props.alt} className={props.className}/>
+    <div className='captionedImage'>
+      <img src={props.source} alt={props.alt} className={props.className} loading='lazy'/>
 
-      <p className='captionedImageTitle'>
+      <p className='title'>
         {isEnglish ? props.enTitle : props.cnTitle}
       </p>
 
-      <p className='captionedImageDescription'>
+      <p className='description'>
         {isEnglish ? props.enDescription : props.cnDescription}
       </p>
     </div>

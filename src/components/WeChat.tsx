@@ -8,8 +8,8 @@ function WeChat() {
   
   return (
     <div className='weChat'>
-      <span className='weChatName'> {isEnglish ? 'WeChat' : ' 微 信'} </span>
-      <img src='/footer_images/wechat.png' alt='WeChat Code' className='weChatCode'/>
+      <span className='title'> {isEnglish ? 'WeChat' : ' 微 信'} </span>
+      <img src='/footer_images/wechat.png' alt='WeChat Code' className='code'/>
     </div>
   )
 }

@@ -3,8 +3,8 @@ import './Tables.css';
 
 function Tables() {
   return (
-    <div>
-      <img className='tables' src='palette.jpg' alt='colors'></img>
+    <div className='tables'>
+      <img src='palette.jpg' alt='colors'></img>
     </div>
   )
 }

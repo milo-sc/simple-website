@@ -1,45 +1,40 @@
-.landscapeCaptionedImage {
-  width: 35vw;
-  height: 40vh;
-}
-
-.portraitCaptionedImage {
-  width: 25vw;
-  height: 50vh;
-}
-
-.squareCaptionedImage {
-  width: 10vw;
-  height: 10vw;
-}
-
-.captionedImageStyle {
+.captionedImage {
   margin: 5px;
 }
 
-.captionedImageTitle {
+.captionedImage .title {
   font-weight: bold;
   text-wrap: wrap;
 }
 
-.captionedImageDescription {
+.captionedImage .description {
   width: 35vw;
   margin: auto;
   text-wrap: wrap;
 }
 
+.captionedImage .landscape {
+  width: 35vw;
+  height: 40vh;
+}
+
+.captionedImage .portrait {
+  width: 25vw;
+  height: 50vh;
+}
+
 @media (max-width: 850px) {
-  .landscapeCaptionedImage {
+  .captionedImage .description {
+    width: 70vw;
+  }
+
+  .captionedImage .landscape {
     width: 70vw;
     height: 25vh;
   }
   
-  .portraitCaptionedImage {
+  .captionedImage .portrait {
     width: 70vw;
     height: 50vh;
-  }
-
-  .captionedImageDescription {
-    width: 70vw;
   }
 }

@@ -14,8 +14,8 @@ function Blurb(props: { isHovered: boolean; }) {
   `;
 
   return (
-    <div>
-      <span className='blurb'> {isEnglish ? enBlurb : cnBlurb} </span>
+    <div className='blurb'>
+      <span> {isEnglish ? enBlurb : cnBlurb} </span>
     </div>
   )
 }

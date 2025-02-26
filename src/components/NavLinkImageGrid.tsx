@@ -13,7 +13,7 @@ const NavLinkImageGrid = () => {
           key={num}
           source={`/booths_images/${num}.gif`}
           alt={`${num}`}
-          className="squareNavLinkImage"
+          className="square"
         />
       ))}
     </div>

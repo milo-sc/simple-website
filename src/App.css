@@ -1,3 +1,40 @@
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app .backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.app .mainLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* Language Bar */
+.language {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.language.notHome {
+  background-color: black;
+}
+
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,14 +43,22 @@
   padding-right: 1.5vw;
 }
 
-.language {
-  display: flex;
-  justify-content: space-between;
-  padding: 2px;
+.header.notHome {
+  background-color: black;
 }
 
+/* Main */
 .content {
   text-align: center;
+}
+
+/* Footer */
+.footerLine {
+  background-color: grey;
+  width: 95vw;
+  height: 1px;
+  margin: auto;
+  padding: none;
 }
 
 .footer {
@@ -26,50 +71,11 @@
   padding-inline-end: 2.5vw;
 }
 
-.footerLine {
-  background-color: grey;
-  width: 95vw;
-  height: 1px;
-  margin: auto;
-  padding: none;
-}
-
-.copyright {
+.footer .copyright {
   text-decoration: none;
   margin: 5px;
   color: grey;
   font-size: x-small;
 }
 
-.attribution {
-  padding: none;
-  margin: none;
-  text-decoration: none;
-  color: grey;
-  font-size: xx-small;
-}
 
-.videoContainer {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.backgroundVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
