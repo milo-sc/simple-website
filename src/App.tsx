@@ -47,7 +47,7 @@ function App() {
   return (
     <LanguageSetter>
       <div className="app">
-        <video autoPlay muted loop playsInline x5-video-player-type="h5" className='backgroundVideo'>
+        <video autoPlay muted loop playsInline x5-video-player-type="h5" x5-video-player-fullscreen="true" className='backgroundVideo'>
           <source src="/background.mp4" type="video/mp4"></source>
         </video>
         <div className='mainLayer'>
