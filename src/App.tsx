@@ -19,19 +19,19 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-// brand
-//  SHELVED change brand's text colors when hovering over the brand?
-
 // footer
 //  add google maps integration?
-//  hours of operation? mon to sat 9am to 5:30pm - add to the right of address 
+//  hours of operation > mon to sat 9am to 5:30pm - add to the right of address 
 
 // booths
-//  mouse hover -> picture gets bigger
+//  mouse hover > picture gets bigger
+
+// https://uxwing.com/thin-long-arrow-bottom-icon/ for icons
 
 // SHELVED stop video when in another route? 
 
-// https://uxwing.com/thin-long-arrow-bottom-icon/ for icons
+// brand
+//  SHELVED change brand's text colors when hovering over the brand?
 
 function App() {
   const currentLocation = useLocation();

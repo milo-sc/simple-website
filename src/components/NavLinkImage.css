@@ -1,11 +1,36 @@
 .navLinkImage {
   text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.navLinkImage:hover {
+  transform: scale(1.5);
+  z-index: 11;
 }
 
 .navLinkImage .square {
   width: 15vw;
   height: 15vw;
   padding: 5px;
+  /* transition: transform 0.3s ease, z-index 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; */
+}
+
+/* .square:hover,
+.square:hover ~ .descriptor {
+  transform: scale(1.5);
+  z-index: 11;
+} */
+
+.navLinkImage .descriptor {
+  background-color: white;
+  /* transition: transform 0.3s ease; */
 }
 
 /* For Mobile */
