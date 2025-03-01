@@ -19,12 +19,12 @@ import Chairs from './pages/Chairs';
 import Tables from './pages/Tables';
 import Special from './pages/Special';
 
+// issue
+//  cloud run domain mapping is a PREVIEW (https://cloud.google.com/run/docs/mapping-custom-domains)
+
 // footer
 //  add google maps integration?
-//  hours of operation > mon to sat 9am to 5:30pm - add to the right of address 
-
-// booths
-//  mouse hover > picture gets bigger
+//  hours of operation > mon to sat 9am to 5:30pm - add to the right of address
 
 // https://uxwing.com/thin-long-arrow-bottom-icon/ for icons
 
