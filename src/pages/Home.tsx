@@ -41,7 +41,7 @@ function Home() {
       {/* Captioned Images */}
       <div className='captionedImageContainer'>
         <CaptionedImage 
-          source='home_images/blueSofaAndChairs.jpg'
+          source='home_images/IMG_0034.jpg'
           alt='Unmatched Comfort, Exquisite Design'
           className='landscape'
           enTitle='Unmatched Comfort, Exquisite Design' 
@@ -50,7 +50,7 @@ function Home() {
           cnDescription='符合人体工学的设计，为顾客提供舒适的用餐体验。'
           />
         <CaptionedImage 
-          source='home_images/brownTableSofas.jpeg'
+          source='home_images/IMG_0132.jpg'
           alt='Meticulous Craftsmanship, Uncompromising Quality'
           className='landscape'
           enTitle='Meticulous Craftsmanship, Uncompromising Quality' 
@@ -61,7 +61,7 @@ function Home() {
       </div>
       <div className='captionedImageContainer'>
         <CaptionedImage 
-          source='home_images/brownUTableSofas.jpg'
+          source='home_images/redBrownUTableSofas.jpg'
           alt='Years of Experience, Trustworthy Expertise'
           className='portrait'
           enTitle='Years of Experience, Trustworthy Expertise' 
@@ -70,7 +70,7 @@ function Home() {
           cnDescription='凭借多年行业经验，我们深知如何打造经久耐用、舒适美观的展位，为您的餐饮空间保驾护航。'
           />
         <CaptionedImage 
-          source='home_images/whiteUTableSofas.jpg'
+          source='home_images/beigeUTableSofas.jpg'
           alt='Diverse Styles, Customized Solutions'
           className='portrait'
           enTitle='Diverse Styles, Customized Solutions' 
