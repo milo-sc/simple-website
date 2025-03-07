@@ -11,7 +11,7 @@ const NavLinkImageGrid = () => {
       {imageNumbers.map((num) => (
         <NavLinkImage
           key={num}
-          source={`/booths_images/${num}.gif`}
+          source={`/booths_images/${num}.png`}
           alt={`${num}`}
           className="square"
         />
