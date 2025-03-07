@@ -41,7 +41,7 @@ function Home() {
       {/* Captioned Images */}
       <div className='captionedImageContainer'>
         <CaptionedImage 
-          source='home_images/IMG_0034.jpg'
+          source='home_images/IMG_0034.JPG'
           alt='Unmatched Comfort, Exquisite Design'
           className='landscape'
           enTitle='Unmatched Comfort, Exquisite Design' 
@@ -50,7 +50,7 @@ function Home() {
           cnDescription='符合人体工学的设计，为顾客提供舒适的用餐体验。'
           />
         <CaptionedImage 
-          source='home_images/IMG_0132.jpg'
+          source='home_images/IMG_0132.JPG'
           alt='Meticulous Craftsmanship, Uncompromising Quality'
           className='landscape'
           enTitle='Meticulous Craftsmanship, Uncompromising Quality' 
