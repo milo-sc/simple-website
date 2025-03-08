@@ -10,7 +10,7 @@ function Blurb(props: { isHovered: boolean; }) {
     Phone - (718) 923-6087
   `;
   const cnBlurb = `
-    电话 - (718)923-6087
+    电话 - (718) 923-6087
   `;
 
   return (
