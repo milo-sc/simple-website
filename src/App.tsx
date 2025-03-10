@@ -15,8 +15,8 @@ import Navigation from './components/Navigation';
 
 import Home from './pages/Home';
 import Booths from './pages/Booths';
-import Chairs from './pages/Chairs';
-import Tables from './pages/Tables';
+// import Chairs from './pages/Chairs';
+// import Tables from './pages/Tables';
 import Special from './pages/Special';
 
 // footer
@@ -79,8 +79,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/booths" element={<Booths />} />
-              <Route path="/chairs" element={<Chairs />} />
-              <Route path="/tables" element={<Tables />} />
+              {/* <Route path="/chairs" element={<Chairs />} /> */}
+              {/* <Route path="/tables" element={<Tables />} /> */}
               <Route path="/special" element={<Special />} />
             </Routes>
           </main>

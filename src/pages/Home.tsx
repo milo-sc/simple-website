@@ -23,7 +23,7 @@ function Home() {
         </div>
 
         <div className='toBooths'>
-          <Link to="/Booths" className='button'>{isEnglish ? 'Explore' : '探索'}</Link>
+          <Link to="/booths" className='button'>{isEnglish ? 'Explore' : '探索'}</Link>
         </div>
       </div>
      
