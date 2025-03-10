@@ -44,7 +44,13 @@ function App() {
   return (
     <LanguageSetter>
       <div className="app">
-        <video poster='/home_images/brownTableSofas.jpeg' autoPlay muted loop playsInline x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" className='backgroundVideo'>
+        <video 
+          // poster='/home_images/brownTableSofas.jpeg' 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          className='backgroundVideo'>
           <source src="/background.mp4" type="video/mp4"></source>
         </video>
         <div className='mainLayer'>
