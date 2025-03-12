@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 import { LanguageSetter } from './contexts/Language';
 
+import BackgroundVideo from './components/BackgroundVideo';
 import Contact from './components/Contact';
 import Blurb from './components/Blurb';
 import Brand from './components/Brand';
@@ -44,15 +45,10 @@ function App() {
   return (
     <LanguageSetter>
       <div className="app">
-        <video 
-          // poster='/home_images/brownTableSofas.jpeg' 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className='backgroundVideo'>
-          <source src="/background.mp4" type="video/mp4"></source>
-        </video>
+        {/* Background Video */}
+        <BackgroundVideo />
+
+        {/* Main Layer */}
         <div className='mainLayer'>
           {/* Language Toggle */}
           <div 
