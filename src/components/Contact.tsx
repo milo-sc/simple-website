@@ -29,7 +29,7 @@ function Contact() {
       {/* Phone */}
       <div className='container'>
         <img src='/footer_images/phone.gif' alt='Phone Icon' className='icon'/>
-        <span> (718) 923-6087 </span>
+        <a href='tel:+17189236087' className='phoneNumber'> (718) 923-6087 </a>
       </div>
       
       {/* Fax */}

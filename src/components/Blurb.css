@@ -4,3 +4,8 @@
   padding-left: 1vw;
   padding-top: 1px;
 }
+
+.blurb .phoneNumber {
+  text-decoration: none;
+  color: white;
+}
