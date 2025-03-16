@@ -20,11 +20,23 @@ import Booths from './pages/Booths';
 // import Tables from './pages/Tables';
 import Special from './pages/Special';
 
+// header
+//  align en and cn
+
 // footer
 //  add google maps integration?
 //  hours of operation > mon to sat 9am to 5:30pm - add to the right of address
 
-// https://uxwing.com/thin-long-arrow-bottom-icon/ for icons
+// booths
+//  image shouldnt expand above the nav
+
+// special
+//  text kinda hard to read
+
+// home
+//  ? clickable down arrow
+
+// https://uxwing.com/thin-long-arrow-bottom-icon/ @ icons
 
 // SHELVED stop video when in another route? 
 
