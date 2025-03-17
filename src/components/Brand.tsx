@@ -1,14 +1,12 @@
 // import React from 'react';
 import './Brand.css';
 
-import { Link } from 'react-router-dom';
-
 function Brand(props: { isHovered: boolean; }) {
   return (
     <div className='brand'>
-      <Link to="/" className='english' style={{color: props.isHovered ? 'black' : 'white'}} >Graceful Furniture Manufacturing</Link>
+      <a href="/" className='english' style={{color: props.isHovered ? 'black' : 'white'}} >Graceful Furniture Manufacturing</a>
         <br></br>
-      <Link to="/" className='chinese' style={{color: props.isHovered ? 'black' : 'white'}}>雅緻沙發傢俱制造廠</Link>
+      <a href="/" className='chinese' style={{color: props.isHovered ? 'black' : 'white'}}>雅緻沙發傢俱制造廠</a>
     </div>
   )
 }

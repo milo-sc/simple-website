@@ -1,8 +1,6 @@
 // import React from "react";
 import './Home.css';
 
-import { Link } from 'react-router-dom';
-
 import { useLanguage } from '../contexts/Language';
 
 import Summary from '../components/Summary';
@@ -23,7 +21,7 @@ function Home() {
         </div>
 
         <div className='toBooths'>
-          <Link to="/booths" className='button'>{isEnglish ? 'Explore' : '探索'}</Link>
+          <a href="/booths" className='button'>{isEnglish ? 'Explore' : '探索'}</a>
         </div>
       </div>
      
