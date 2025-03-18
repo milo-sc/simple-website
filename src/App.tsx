@@ -20,9 +20,6 @@ import Booths from './pages/Booths';
 // import Tables from './pages/Tables';
 import Special from './pages/Special';
 
-// header
-//  align en and cn
-
 // footer
 //  add google maps integration?
 //  hours of operation > mon to sat 9am to 5:30pm - add to the right of address
