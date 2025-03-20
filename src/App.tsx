@@ -27,9 +27,6 @@ import Special from './pages/Special';
 // booths
 //  image shouldnt expand above the nav
 
-// special
-//  text kinda hard to read
-
 // home
 //  ? clickable down arrow
 
