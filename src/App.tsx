@@ -23,19 +23,14 @@ import Special from './pages/Special';
 // footer
 //  add google maps integration?
 //  hours of operation > mon to sat 9am to 5:30pm - add to the right of address
-
 // booths
 //  image shouldnt expand above the nav
-
 // home
 //  ? clickable down arrow
-
-// https://uxwing.com/thin-long-arrow-bottom-icon/ @ icons
-
-// SHELVED stop video when in another route? 
-
 // brand
 //  SHELVED change brand's text colors when hovering over the brand?
+// SHELVED stop video when in another route?
+// https://uxwing.com/thin-long-arrow-bottom-icon/ @ icons
 
 function App() {
   const currentLocation = useLocation();
